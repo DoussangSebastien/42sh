@@ -1,0 +1,109 @@
+\doxysection{args\+\_\+s Struct Reference}
+\hypertarget{structargs__s}{}\label{structargs__s}\index{args\_s@{args\_s}}
+
+
+Represents all shell input and context passed to built-\/in functions.  
+
+
+
+
+{\ttfamily \#include $<$struct.\+h$>$}
+
+
+
+Collaboration diagram for args\+\_\+s\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structargs__s__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structargs__s_ac247a6be03d0f5534000cda4d7810d1c}{tab}}
+\item 
+int \mbox{\hyperlink{structargs__s_a940ae15f5368de229c40a5dfd929748d}{interpreted}}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structargs__s_aa3b9fa3cfb1f42735d105f07ed3ebd85}{input}}
+\item 
+\mbox{\hyperlink{struct_8h_abae4a11d2d1c207fb398528adc8a4941}{environ\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structargs__s_afb927880f9ef647aab9de93a5468c0b8}{environ}}
+\item 
+\mbox{\hyperlink{struct_8h_a8ca3143e4d2271258f813db99e99e89b}{alias\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structargs__s_a9bd61376c55de9467c452724aec02502}{alias}}
+\item 
+\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structargs__s_aa19bdc3ac0fc78ccbfa3c6dce988032c}{shell\+\_\+vars}}
+\item 
+int \mbox{\hyperlink{structargs__s_a83d112d26efd613e1bdbbb619bb1356d}{fd\+\_\+out}}
+\item 
+int \mbox{\hyperlink{structargs__s_a1c8c3e8672d4cd6a529d46ef37a54de0}{fd\+\_\+in}}
+\item 
+int \mbox{\hyperlink{structargs__s_a6776b91f79f6c006bef491cdca5f656f}{exit}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents all shell input and context passed to built-\/in functions. 
+
+Contains argument data, environment, aliases, file descriptors, and state flags. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structargs__s_a9bd61376c55de9467c452724aec02502}\index{args\_s@{args\_s}!alias@{alias}}
+\index{alias@{alias}!args\_s@{args\_s}}
+\doxysubsubsection{\texorpdfstring{alias}{alias}}
+{\footnotesize\ttfamily \label{structargs__s_a9bd61376c55de9467c452724aec02502} 
+\mbox{\hyperlink{struct_8h_a8ca3143e4d2271258f813db99e99e89b}{alias\+\_\+t}}\texorpdfstring{$\ast$}{*} args\+\_\+s\+::alias}
+
+Linked list of aliases \Hypertarget{structargs__s_afb927880f9ef647aab9de93a5468c0b8}\index{args\_s@{args\_s}!environ@{environ}}
+\index{environ@{environ}!args\_s@{args\_s}}
+\doxysubsubsection{\texorpdfstring{environ}{environ}}
+{\footnotesize\ttfamily \label{structargs__s_afb927880f9ef647aab9de93a5468c0b8} 
+\mbox{\hyperlink{struct_8h_abae4a11d2d1c207fb398528adc8a4941}{environ\+\_\+t}}\texorpdfstring{$\ast$}{*} args\+\_\+s\+::environ}
+
+Linked list of environment variables \Hypertarget{structargs__s_a6776b91f79f6c006bef491cdca5f656f}\index{args\_s@{args\_s}!exit@{exit}}
+\index{exit@{exit}!args\_s@{args\_s}}
+\doxysubsubsection{\texorpdfstring{exit}{exit}}
+{\footnotesize\ttfamily \label{structargs__s_a6776b91f79f6c006bef491cdca5f656f} 
+int args\+\_\+s\+::exit}
+
+Exit flag or status code \Hypertarget{structargs__s_a1c8c3e8672d4cd6a529d46ef37a54de0}\index{args\_s@{args\_s}!fd\_in@{fd\_in}}
+\index{fd\_in@{fd\_in}!args\_s@{args\_s}}
+\doxysubsubsection{\texorpdfstring{fd\_in}{fd\_in}}
+{\footnotesize\ttfamily \label{structargs__s_a1c8c3e8672d4cd6a529d46ef37a54de0} 
+int args\+\_\+s\+::fd\+\_\+in}
+
+File descriptor for stdin redirection \Hypertarget{structargs__s_a83d112d26efd613e1bdbbb619bb1356d}\index{args\_s@{args\_s}!fd\_out@{fd\_out}}
+\index{fd\_out@{fd\_out}!args\_s@{args\_s}}
+\doxysubsubsection{\texorpdfstring{fd\_out}{fd\_out}}
+{\footnotesize\ttfamily \label{structargs__s_a83d112d26efd613e1bdbbb619bb1356d} 
+int args\+\_\+s\+::fd\+\_\+out}
+
+File descriptor for stdout redirection \Hypertarget{structargs__s_aa3b9fa3cfb1f42735d105f07ed3ebd85}\index{args\_s@{args\_s}!input@{input}}
+\index{input@{input}!args\_s@{args\_s}}
+\doxysubsubsection{\texorpdfstring{input}{input}}
+{\footnotesize\ttfamily \label{structargs__s_aa3b9fa3cfb1f42735d105f07ed3ebd85} 
+char\texorpdfstring{$\ast$}{*} args\+\_\+s\+::input}
+
+Raw input string \Hypertarget{structargs__s_a940ae15f5368de229c40a5dfd929748d}\index{args\_s@{args\_s}!interpreted@{interpreted}}
+\index{interpreted@{interpreted}!args\_s@{args\_s}}
+\doxysubsubsection{\texorpdfstring{interpreted}{interpreted}}
+{\footnotesize\ttfamily \label{structargs__s_a940ae15f5368de229c40a5dfd929748d} 
+int args\+\_\+s\+::interpreted}
+
+Flag indicating if input was interpreted \Hypertarget{structargs__s_aa19bdc3ac0fc78ccbfa3c6dce988032c}\index{args\_s@{args\_s}!shell\_vars@{shell\_vars}}
+\index{shell\_vars@{shell\_vars}!args\_s@{args\_s}}
+\doxysubsubsection{\texorpdfstring{shell\_vars}{shell\_vars}}
+{\footnotesize\ttfamily \label{structargs__s_aa19bdc3ac0fc78ccbfa3c6dce988032c} 
+\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}}\texorpdfstring{$\ast$}{*} args\+\_\+s\+::shell\+\_\+vars}
+
+Shell internal variables (e.\+g., custom vars) \Hypertarget{structargs__s_ac247a6be03d0f5534000cda4d7810d1c}\index{args\_s@{args\_s}!tab@{tab}}
+\index{tab@{tab}!args\_s@{args\_s}}
+\doxysubsubsection{\texorpdfstring{tab}{tab}}
+{\footnotesize\ttfamily \label{structargs__s_ac247a6be03d0f5534000cda4d7810d1c} 
+char\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} args\+\_\+s\+::tab}
+
+Parsed input tokens (e.\+g., argv-\/style) 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_8h}{struct.\+h}}\end{DoxyCompactItemize}

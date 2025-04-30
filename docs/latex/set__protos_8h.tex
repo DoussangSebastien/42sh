@@ -1,0 +1,414 @@
+\doxysection{set\+\_\+protos.\+h File Reference}
+\hypertarget{set__protos_8h}{}\label{set__protos_8h}\index{set\_protos.h@{set\_protos.h}}
+{\ttfamily \#include "{}struct.\+h"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}set\+\_\+struct.\+h"{}}\newline
+Include dependency graph for set\+\_\+protos.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{set__protos_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{set__protos_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{set__protos_8h_ae3e09bf097440a379ef55d7cfb4350e2}{free\+\_\+vars}} (\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}head)
+\begin{DoxyCompactList}\small\item\em Frees a linked list of shell variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{set__protos_8h_a31ab56d6b050e21f0652ad91dee3bfa3}{update\+\_\+last\+\_\+cmd}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args, const char \texorpdfstring{$\ast$}{*}cmd)
+\begin{DoxyCompactList}\small\item\em Updates the shell variable holding the last executed command. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{set__protos_8h_a415a0b30752962489d6a939746fb59c7}{add\+\_\+var}} (\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}head, const char \texorpdfstring{$\ast$}{*}name, const char \texorpdfstring{$\ast$}{*}value)
+\begin{DoxyCompactList}\small\item\em Adds a new variable to the list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{set__protos_8h_a4157ddf0c50d02d7202b1d281fdc02c8}{handle\+\_\+set\+\_\+assignment}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args, const char \texorpdfstring{$\ast$}{*}input)
+\begin{DoxyCompactList}\small\item\em Handles a variable assignment with a value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{set__protos_8h_a26d4cce96a630d341b7360a6ba0bb2db}{handle\+\_\+set\+\_\+no\+\_\+value}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args, const char \texorpdfstring{$\ast$}{*}name)
+\begin{DoxyCompactList}\small\item\em Handles a variable assignment without a value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{set__protos_8h_af9a15fe2499e790ef637284769043d6d}{handle\+\_\+set\+\_\+print}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Prints all local shell variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{set__protos_8h_afb5a26197d794d060f349c3973766551}{process\+\_\+set\+\_\+argument}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args, const char \texorpdfstring{$\ast$}{*}arg)
+\begin{DoxyCompactList}\small\item\em Processes an individual {\ttfamily set} argument. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{set__protos_8h_a0efcef3bc071a44d6f23f1ee596cc572}{init\+\_\+local\+\_\+vars\+\_\+from\+\_\+tcsh}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Initializes local variables from tcsh-\/style configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{set__protos_8h_ab2ec4fee07e371a97837e53f4ddced6c}{print\+\_\+vars}} (\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}head)
+\begin{DoxyCompactList}\small\item\em Prints all shell variables in the list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{set__protos_8h_a00357ac100ce2246a3f615e5f2d6282b}{create\+\_\+new\+\_\+var}} (const char \texorpdfstring{$\ast$}{*}name, const char \texorpdfstring{$\ast$}{*}value)
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t} node. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{set__protos_8h_a08376f0722b60b4b936264bd8aa4594b}{read\+\_\+and\+\_\+store\+\_\+vars}} (FILE \texorpdfstring{$\ast$}{*}fp, \mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Reads variables from file and stores them in shell context. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{set__protos_8h_afa93cb60f5f942bfb15b7c6ecd1c33f8}{sort\+\_\+vars}} (\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}head)
+\begin{DoxyCompactList}\small\item\em Sorts the variable list alphabetically by name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{set__protos_8h_a5ed36d741d03099387b8d18250178c5d}{clone\+\_\+vars}} (\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}head)
+\begin{DoxyCompactList}\small\item\em Clones a list of shell variables. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{set__protos_8h_a92450fd5bc5606b63ce6addbca680a83}{parse\+\_\+assignment}} (const char \texorpdfstring{$\ast$}{*}input, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}name, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}value)
+\begin{DoxyCompactList}\small\item\em Parses an assignment into name and value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{set__protos_8h_a4eb04e8cf5cb4691bf77b0b3cd4a7d3e}{is\+\_\+valid\+\_\+identifier}} (const char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em Validates a shell variable name. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{set__protos_8h_a200fa278d842e14f07642ec8e3cee34c}{trim\+\_\+spaces}} (char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em Trims leading and trailing spaces from a string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{set__protos_8h_a039ee342eea679e74bd3da845c460f86}{update\+\_\+existing\+\_\+var}} (\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}head, \mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}target, const char \texorpdfstring{$\ast$}{*}value)
+\begin{DoxyCompactList}\small\item\em Updates an existing variable with a new value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{set__protos_8h_a2d2cb6e932fef59cbc04187a311aeeab}{add\+\_\+or\+\_\+update\+\_\+var}} (\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}head, const char \texorpdfstring{$\ast$}{*}name, const char \texorpdfstring{$\ast$}{*}value)
+\begin{DoxyCompactList}\small\item\em Adds a variable or updates it if it already exists. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{set__protos_8h_a0b8c1ec2c11a5ce2f1d2ab10a743c67f}{init\+\_\+minimal\+\_\+vars}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Initializes a minimal set of shell variables if none exist. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{set__protos_8h_a2d2cb6e932fef59cbc04187a311aeeab}\index{set\_protos.h@{set\_protos.h}!add\_or\_update\_var@{add\_or\_update\_var}}
+\index{add\_or\_update\_var@{add\_or\_update\_var}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{add\_or\_update\_var()}{add\_or\_update\_var()}}
+{\footnotesize\ttfamily \label{set__protos_8h_a2d2cb6e932fef59cbc04187a311aeeab} 
+\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*} add\+\_\+or\+\_\+update\+\_\+var (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{head}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Adds a variable or updates it if it already exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em head} & List head. \\
+\hline
+{\em name} & Variable name. \\
+\hline
+{\em value} & Value to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Updated list head. 
+\end{DoxyReturn}
+\Hypertarget{set__protos_8h_a415a0b30752962489d6a939746fb59c7}\index{set\_protos.h@{set\_protos.h}!add\_var@{add\_var}}
+\index{add\_var@{add\_var}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{add\_var()}{add\_var()}}
+{\footnotesize\ttfamily \label{set__protos_8h_a415a0b30752962489d6a939746fb59c7} 
+\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*} add\+\_\+var (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{head}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Adds a new variable to the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em head} & Head of the variable list. \\
+\hline
+{\em name} & Name of the variable. \\
+\hline
+{\em value} & Value to assign. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New head of the variable list. 
+\end{DoxyReturn}
+\Hypertarget{set__protos_8h_a5ed36d741d03099387b8d18250178c5d}\index{set\_protos.h@{set\_protos.h}!clone\_vars@{clone\_vars}}
+\index{clone\_vars@{clone\_vars}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{clone\_vars()}{clone\_vars()}}
+{\footnotesize\ttfamily \label{set__protos_8h_a5ed36d741d03099387b8d18250178c5d} 
+\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*} clone\+\_\+vars (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{head}{}\end{DoxyParamCaption})}
+
+
+
+Clones a list of shell variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em head} & Original list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New cloned list. 
+\end{DoxyReturn}
+\Hypertarget{set__protos_8h_a00357ac100ce2246a3f615e5f2d6282b}\index{set\_protos.h@{set\_protos.h}!create\_new\_var@{create\_new\_var}}
+\index{create\_new\_var@{create\_new\_var}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{create\_new\_var()}{create\_new\_var()}}
+{\footnotesize\ttfamily \label{set__protos_8h_a00357ac100ce2246a3f615e5f2d6282b} 
+\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*} create\+\_\+new\+\_\+var (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Creates a new \doxylink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t} node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Variable name. \\
+\hline
+{\em value} & Variable value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to new node. 
+\end{DoxyReturn}
+\Hypertarget{set__protos_8h_ae3e09bf097440a379ef55d7cfb4350e2}\index{set\_protos.h@{set\_protos.h}!free\_vars@{free\_vars}}
+\index{free\_vars@{free\_vars}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{free\_vars()}{free\_vars()}}
+{\footnotesize\ttfamily \label{set__protos_8h_ae3e09bf097440a379ef55d7cfb4350e2} 
+void free\+\_\+vars (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{head}{}\end{DoxyParamCaption})}
+
+
+
+Frees a linked list of shell variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em head} & Pointer to the first \doxylink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t} node. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{set__protos_8h_a4157ddf0c50d02d7202b1d281fdc02c8}\index{set\_protos.h@{set\_protos.h}!handle\_set\_assignment@{handle\_set\_assignment}}
+\index{handle\_set\_assignment@{handle\_set\_assignment}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{handle\_set\_assignment()}{handle\_set\_assignment()}}
+{\footnotesize\ttfamily \label{set__protos_8h_a4157ddf0c50d02d7202b1d281fdc02c8} 
+int handle\+\_\+set\+\_\+assignment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{input}{}\end{DoxyParamCaption})}
+
+
+
+Handles a variable assignment with a value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Shell argument context. \\
+\hline
+{\em input} & Full assignment string (e.\+g., NAME=VALUE). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, -\/1 on failure. 
+\end{DoxyReturn}
+\Hypertarget{set__protos_8h_a26d4cce96a630d341b7360a6ba0bb2db}\index{set\_protos.h@{set\_protos.h}!handle\_set\_no\_value@{handle\_set\_no\_value}}
+\index{handle\_set\_no\_value@{handle\_set\_no\_value}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{handle\_set\_no\_value()}{handle\_set\_no\_value()}}
+{\footnotesize\ttfamily \label{set__protos_8h_a26d4cce96a630d341b7360a6ba0bb2db} 
+int handle\+\_\+set\+\_\+no\+\_\+value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Handles a variable assignment without a value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Shell argument context. \\
+\hline
+{\em name} & Variable name to set with empty value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, -\/1 on failure. 
+\end{DoxyReturn}
+\Hypertarget{set__protos_8h_af9a15fe2499e790ef637284769043d6d}\index{set\_protos.h@{set\_protos.h}!handle\_set\_print@{handle\_set\_print}}
+\index{handle\_set\_print@{handle\_set\_print}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{handle\_set\_print()}{handle\_set\_print()}}
+{\footnotesize\ttfamily \label{set__protos_8h_af9a15fe2499e790ef637284769043d6d} 
+int handle\+\_\+set\+\_\+print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Prints all local shell variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Shell argument context. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 always. 
+\end{DoxyReturn}
+\Hypertarget{set__protos_8h_a0efcef3bc071a44d6f23f1ee596cc572}\index{set\_protos.h@{set\_protos.h}!init\_local\_vars\_from\_tcsh@{init\_local\_vars\_from\_tcsh}}
+\index{init\_local\_vars\_from\_tcsh@{init\_local\_vars\_from\_tcsh}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{init\_local\_vars\_from\_tcsh()}{init\_local\_vars\_from\_tcsh()}}
+{\footnotesize\ttfamily \label{set__protos_8h_a0efcef3bc071a44d6f23f1ee596cc572} 
+void init\+\_\+local\+\_\+vars\+\_\+from\+\_\+tcsh (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Initializes local variables from tcsh-\/style configuration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Shell argument context. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{set__protos_8h_a0b8c1ec2c11a5ce2f1d2ab10a743c67f}\index{set\_protos.h@{set\_protos.h}!init\_minimal\_vars@{init\_minimal\_vars}}
+\index{init\_minimal\_vars@{init\_minimal\_vars}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{init\_minimal\_vars()}{init\_minimal\_vars()}}
+{\footnotesize\ttfamily \label{set__protos_8h_a0b8c1ec2c11a5ce2f1d2ab10a743c67f} 
+void init\+\_\+minimal\+\_\+vars (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a minimal set of shell variables if none exist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Shell argument context. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{set__protos_8h_a4eb04e8cf5cb4691bf77b0b3cd4a7d3e}\index{set\_protos.h@{set\_protos.h}!is\_valid\_identifier@{is\_valid\_identifier}}
+\index{is\_valid\_identifier@{is\_valid\_identifier}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_identifier()}{is\_valid\_identifier()}}
+{\footnotesize\ttfamily \label{set__protos_8h_a4eb04e8cf5cb4691bf77b0b3cd4a7d3e} 
+int is\+\_\+valid\+\_\+identifier (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})}
+
+
+
+Validates a shell variable name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Variable name to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if valid, 0 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{set__protos_8h_a92450fd5bc5606b63ce6addbca680a83}\index{set\_protos.h@{set\_protos.h}!parse\_assignment@{parse\_assignment}}
+\index{parse\_assignment@{parse\_assignment}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{parse\_assignment()}{parse\_assignment()}}
+{\footnotesize\ttfamily \label{set__protos_8h_a92450fd5bc5606b63ce6addbca680a83} 
+int parse\+\_\+assignment (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{input}{, }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{name}{, }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Parses an assignment into name and value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Full assignment string. \\
+\hline
+{\em name} & Output\+: pointer to name (malloc’d). \\
+\hline
+{\em value} & Output\+: pointer to value (malloc’d). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, -\/1 on format error. 
+\end{DoxyReturn}
+\Hypertarget{set__protos_8h_ab2ec4fee07e371a97837e53f4ddced6c}\index{set\_protos.h@{set\_protos.h}!print\_vars@{print\_vars}}
+\index{print\_vars@{print\_vars}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{print\_vars()}{print\_vars()}}
+{\footnotesize\ttfamily \label{set__protos_8h_ab2ec4fee07e371a97837e53f4ddced6c} 
+void print\+\_\+vars (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{head}{}\end{DoxyParamCaption})}
+
+
+
+Prints all shell variables in the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em head} & Head of the \doxylink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t} list. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{set__protos_8h_afb5a26197d794d060f349c3973766551}\index{set\_protos.h@{set\_protos.h}!process\_set\_argument@{process\_set\_argument}}
+\index{process\_set\_argument@{process\_set\_argument}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{process\_set\_argument()}{process\_set\_argument()}}
+{\footnotesize\ttfamily \label{set__protos_8h_afb5a26197d794d060f349c3973766551} 
+void process\+\_\+set\+\_\+argument (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{arg}{}\end{DoxyParamCaption})}
+
+
+
+Processes an individual {\ttfamily set} argument. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Shell argument context. \\
+\hline
+{\em arg} & Raw argument string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{set__protos_8h_a08376f0722b60b4b936264bd8aa4594b}\index{set\_protos.h@{set\_protos.h}!read\_and\_store\_vars@{read\_and\_store\_vars}}
+\index{read\_and\_store\_vars@{read\_and\_store\_vars}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{read\_and\_store\_vars()}{read\_and\_store\_vars()}}
+{\footnotesize\ttfamily \label{set__protos_8h_a08376f0722b60b4b936264bd8aa4594b} 
+void read\+\_\+and\+\_\+store\+\_\+vars (\begin{DoxyParamCaption}\item[{FILE \texorpdfstring{$\ast$}{*}}]{fp}{, }\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Reads variables from file and stores them in shell context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fp} & Open file pointer. \\
+\hline
+{\em args} & Shell argument context. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{set__protos_8h_afa93cb60f5f942bfb15b7c6ecd1c33f8}\index{set\_protos.h@{set\_protos.h}!sort\_vars@{sort\_vars}}
+\index{sort\_vars@{sort\_vars}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{sort\_vars()}{sort\_vars()}}
+{\footnotesize\ttfamily \label{set__protos_8h_afa93cb60f5f942bfb15b7c6ecd1c33f8} 
+\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*} sort\+\_\+vars (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{head}{}\end{DoxyParamCaption})}
+
+
+
+Sorts the variable list alphabetically by name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em head} & Head of the list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New sorted head. 
+\end{DoxyReturn}
+\Hypertarget{set__protos_8h_a200fa278d842e14f07642ec8e3cee34c}\index{set\_protos.h@{set\_protos.h}!trim\_spaces@{trim\_spaces}}
+\index{trim\_spaces@{trim\_spaces}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{trim\_spaces()}{trim\_spaces()}}
+{\footnotesize\ttfamily \label{set__protos_8h_a200fa278d842e14f07642ec8e3cee34c} 
+char \texorpdfstring{$\ast$}{*} trim\+\_\+spaces (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})}
+
+
+
+Trims leading and trailing spaces from a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String to trim. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to trimmed string (same or modified). 
+\end{DoxyReturn}
+\Hypertarget{set__protos_8h_a039ee342eea679e74bd3da845c460f86}\index{set\_protos.h@{set\_protos.h}!update\_existing\_var@{update\_existing\_var}}
+\index{update\_existing\_var@{update\_existing\_var}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{update\_existing\_var()}{update\_existing\_var()}}
+{\footnotesize\ttfamily \label{set__protos_8h_a039ee342eea679e74bd3da845c460f86} 
+\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*} update\+\_\+existing\+\_\+var (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{head}{, }\item[{\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{target}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Updates an existing variable with a new value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em head} & List head. \\
+\hline
+{\em target} & Node to update. \\
+\hline
+{\em value} & New value string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Head of the list. 
+\end{DoxyReturn}
+\Hypertarget{set__protos_8h_a31ab56d6b050e21f0652ad91dee3bfa3}\index{set\_protos.h@{set\_protos.h}!update\_last\_cmd@{update\_last\_cmd}}
+\index{update\_last\_cmd@{update\_last\_cmd}!set\_protos.h@{set\_protos.h}}
+\doxysubsubsection{\texorpdfstring{update\_last\_cmd()}{update\_last\_cmd()}}
+{\footnotesize\ttfamily \label{set__protos_8h_a31ab56d6b050e21f0652ad91dee3bfa3} 
+void update\+\_\+last\+\_\+cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{cmd}{}\end{DoxyParamCaption})}
+
+
+
+Updates the shell variable holding the last executed command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Pointer to argument context. \\
+\hline
+{\em cmd} & Command string to store. \\
+\hline
+\end{DoxyParams}

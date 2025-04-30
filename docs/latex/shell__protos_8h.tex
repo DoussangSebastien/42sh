@@ -1,0 +1,444 @@
+\doxysection{shell\+\_\+protos.\+h File Reference}
+\hypertarget{shell__protos_8h}{}\label{shell__protos_8h}\index{shell\_protos.h@{shell\_protos.h}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}my.\+h"{}}\newline
+{\ttfamily \#include "{}shell\+\_\+protos\+\_\+2.\+h"{}}\newline
+{\ttfamily \#include "{}macros.\+h"{}}\newline
+{\ttfamily \#include "{}struct.\+h"{}}\newline
+{\ttfamily \#include "{}parsing\+\_\+struct.\+h"{}}\newline
+{\ttfamily \#include "{}inhibitor.\+h"{}}\newline
+{\ttfamily \#include "{}globbings.\+h"{}}\newline
+{\ttfamily \#include "{}which.\+h"{}}\newline
+Include dependency graph for shell\+\_\+protos.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shell__protos_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{shell__protos_8h_a75796dc4a748b7228abf79e08cbf8621}{shell}} (char const \texorpdfstring{$\ast$}{*}envp\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Main shell loop entry point. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_a21fa2cac53cb3d38fdd03d5b4e693bd9}{executable\+\_\+condition}} (pid\+\_\+t pid, \mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}data, char const \texorpdfstring{$\ast$}{*}input, int index)
+\begin{DoxyCompactList}\small\item\em Executes a child process or handles post-\/fork behavior. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_a4241acc19f227a0bf46e33df8358cd34}{check\+\_\+stdin}} (\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Checks if standard input is valid or redirected. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{shell__protos_8h_aee90869cc9def2cde3972606f51f818e}{create\+\_\+path}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Constructs the full path to a command. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_a865e175d4567846a96a8403480e47448}{execute\+\_\+builtins}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args, \mbox{\hyperlink{struct_8h_ab1077483b1a0b074e8bdb232161d1248}{functions\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}functions, int \texorpdfstring{$\ast$}{*}check)
+\begin{DoxyCompactList}\small\item\em Executes a built-\/in command if one matches. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_a0a09db6fedaf0442473d79141d81e6cf}{my\+\_\+unalias}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Executes the {\ttfamily unalias} built-\/in. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_a910ba67b626d2efd6b5346a1c71ae424}{del\+\_\+alias}} (\mbox{\hyperlink{struct_8h_a8ca3143e4d2271258f813db99e99e89b}{alias\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}alias, \mbox{\hyperlink{struct_8h_a8ca3143e4d2271258f813db99e99e89b}{alias\+\_\+t}} \texorpdfstring{$\ast$}{*}prev, \mbox{\hyperlink{struct_8h_a8ca3143e4d2271258f813db99e99e89b}{alias\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}head)
+\begin{DoxyCompactList}\small\item\em Deletes an alias from the list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_a37fe639f5c9352427d925585e9ab9a20}{my\+\_\+where}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Executes the {\ttfamily where} built-\/in. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_a1f2d6b9dbef5e19453610451f5ba07e1}{init\+\_\+aliases}} (\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Initializes the alias list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_a12e30fcc8b33ebc04277200b1b7b8dbd}{my\+\_\+setenv}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Built-\/in implementation of {\ttfamily setenv}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_a74c305d2f62338952971eba30cf9104d}{my\+\_\+exit}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Exits the shell with a specified status. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_a557ddf468da0f667506c41b2c2deea8e}{my\+\_\+cd}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Changes the current working directory. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_ad151b7ff2ceb7dfad7e2c6fca2c71f2f}{my\+\_\+env}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Displays the environment variables. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_af1d60f364ff1b254efe3a708803dbcde}{my\+\_\+unsetenv}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Removes environment variables. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_a1ee52248d822eec74d7f5a3d4042bde1}{my\+\_\+alias}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Defines or displays aliases. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_aa61d8b4f18267d345ef5d6dade5eae9b}{my\+\_\+history}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Displays the shell\textquotesingle{}s command history. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{shell__protos_8h_a445b1d07346a235717057811d6f53e4a}{rev\+\_\+list}} (\mbox{\hyperlink{struct_8h_abae4a11d2d1c207fb398528adc8a4941}{environ\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}environ)
+\begin{DoxyCompactList}\small\item\em Reverses the environment variable linked list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_8h_ab1077483b1a0b074e8bdb232161d1248}{functions\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{shell__protos_8h_a157eef18c5900cbe7bda1cba7b37534a}{init\+\_\+function\+\_\+list}} (\mbox{\hyperlink{struct_8h_ab1077483b1a0b074e8bdb232161d1248}{functions\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}functions)
+\begin{DoxyCompactList}\small\item\em Initializes the table of built-\/in functions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_a442c522caf28ff0eb6dddeb322ea0af1}{init\+\_\+data}} (\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}data, char const \texorpdfstring{$\ast$}{*}envp\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Initializes the global shell data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_a58fdb2450bcf83696f9e64c5a01576ed}{init\+\_\+environment}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args, char const \texorpdfstring{$\ast$}{*}envp\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Initializes the environment variable list. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{shell__protos_8h_a389899f0df1b41b43bb510abb076e7a2}{build\+\_\+envp}} (\mbox{\hyperlink{struct_8h_abae4a11d2d1c207fb398528adc8a4941}{environ\+\_\+t}} \texorpdfstring{$\ast$}{*}environ)
+\begin{DoxyCompactList}\small\item\em Builds an envp-\/style array from internal list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{shell__protos_8h_ad495234cf2ac6e502fd8a67b11fdc308}{change\+\_\+env\+\_\+dir}} (\mbox{\hyperlink{struct_8h_abae4a11d2d1c207fb398528adc8a4941}{environ\+\_\+t}} \texorpdfstring{$\ast$}{*}environ)
+\begin{DoxyCompactList}\small\item\em Updates environment after a directory change. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_a687dd3dadc4458d13aafc2505f1f934d}{old\+\_\+pwd}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Retrieves the old working directory. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_aae740256f10656b4fceb53d8e4923ebf}{analyze\+\_\+input}} (\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Parses and analyzes raw input for execution. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_abf62c04fb8f1c5b79bdd713ff8feef23}{display\+\_\+cd\+\_\+error}} (char \texorpdfstring{$\ast$}{*}new\+\_\+dir)
+\begin{DoxyCompactList}\small\item\em Displays an error message for a failed {\ttfamily cd}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos_8h_a4987e1daef8639468791fa91b1afd904}{free\+\_\+functions}} (\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}data, int return\+\_\+val)
+\begin{DoxyCompactList}\small\item\em Frees all function-\/related memory in shell data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{shell__protos_8h_a03e72773c7971f5dba01ff3ea3390d07}{create\+\_\+env}} (\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Creates initial environment list in the shell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{shell__protos_8h_aae740256f10656b4fceb53d8e4923ebf}\index{shell\_protos.h@{shell\_protos.h}!analyze\_input@{analyze\_input}}
+\index{analyze\_input@{analyze\_input}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{analyze\_input()}{analyze\_input()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_aae740256f10656b4fceb53d8e4923ebf} 
+int analyze\+\_\+input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Parses and analyzes raw input for execution. 
+
+\Hypertarget{shell__protos_8h_a389899f0df1b41b43bb510abb076e7a2}\index{shell\_protos.h@{shell\_protos.h}!build\_envp@{build\_envp}}
+\index{build\_envp@{build\_envp}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{build\_envp()}{build\_envp()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a389899f0df1b41b43bb510abb076e7a2} 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} build\+\_\+envp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_abae4a11d2d1c207fb398528adc8a4941}{environ\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{environ}{}\end{DoxyParamCaption})}
+
+
+
+Builds an envp-\/style array from internal list. 
+
+\Hypertarget{shell__protos_8h_ad495234cf2ac6e502fd8a67b11fdc308}\index{shell\_protos.h@{shell\_protos.h}!change\_env\_dir@{change\_env\_dir}}
+\index{change\_env\_dir@{change\_env\_dir}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{change\_env\_dir()}{change\_env\_dir()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_ad495234cf2ac6e502fd8a67b11fdc308} 
+void change\+\_\+env\+\_\+dir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_abae4a11d2d1c207fb398528adc8a4941}{environ\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{environ}{}\end{DoxyParamCaption})}
+
+
+
+Updates environment after a directory change. 
+
+\Hypertarget{shell__protos_8h_a4241acc19f227a0bf46e33df8358cd34}\index{shell\_protos.h@{shell\_protos.h}!check\_stdin@{check\_stdin}}
+\index{check\_stdin@{check\_stdin}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{check\_stdin()}{check\_stdin()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a4241acc19f227a0bf46e33df8358cd34} 
+int check\+\_\+stdin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Checks if standard input is valid or redirected. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to shell data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if stdin is valid, 0 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos_8h_a03e72773c7971f5dba01ff3ea3390d07}\index{shell\_protos.h@{shell\_protos.h}!create\_env@{create\_env}}
+\index{create\_env@{create\_env}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{create\_env()}{create\_env()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a03e72773c7971f5dba01ff3ea3390d07} 
+void create\+\_\+env (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Creates initial environment list in the shell. 
+
+\Hypertarget{shell__protos_8h_aee90869cc9def2cde3972606f51f818e}\index{shell\_protos.h@{shell\_protos.h}!create\_path@{create\_path}}
+\index{create\_path@{create\_path}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{create\_path()}{create\_path()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_aee90869cc9def2cde3972606f51f818e} 
+char \texorpdfstring{$\ast$}{*} create\+\_\+path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Constructs the full path to a command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Pointer to parsed argument context. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Allocated string containing the full path. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos_8h_a910ba67b626d2efd6b5346a1c71ae424}\index{shell\_protos.h@{shell\_protos.h}!del\_alias@{del\_alias}}
+\index{del\_alias@{del\_alias}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{del\_alias()}{del\_alias()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a910ba67b626d2efd6b5346a1c71ae424} 
+int del\+\_\+alias (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a8ca3143e4d2271258f813db99e99e89b}{alias\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{alias}{, }\item[{\mbox{\hyperlink{struct_8h_a8ca3143e4d2271258f813db99e99e89b}{alias\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{prev}{, }\item[{\mbox{\hyperlink{struct_8h_a8ca3143e4d2271258f813db99e99e89b}{alias\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{head}{}\end{DoxyParamCaption})}
+
+
+
+Deletes an alias from the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alias} & Pointer to alias node. \\
+\hline
+{\em prev} & Pointer to previous alias node. \\
+\hline
+{\em head} & Pointer to head of alias list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, -\/1 if alias not found. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos_8h_abf62c04fb8f1c5b79bdd713ff8feef23}\index{shell\_protos.h@{shell\_protos.h}!display\_cd\_error@{display\_cd\_error}}
+\index{display\_cd\_error@{display\_cd\_error}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{display\_cd\_error()}{display\_cd\_error()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_abf62c04fb8f1c5b79bdd713ff8feef23} 
+int display\+\_\+cd\+\_\+error (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{new\+\_\+dir}{}\end{DoxyParamCaption})}
+
+
+
+Displays an error message for a failed {\ttfamily cd}. 
+
+\Hypertarget{shell__protos_8h_a21fa2cac53cb3d38fdd03d5b4e693bd9}\index{shell\_protos.h@{shell\_protos.h}!executable\_condition@{executable\_condition}}
+\index{executable\_condition@{executable\_condition}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{executable\_condition()}{executable\_condition()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a21fa2cac53cb3d38fdd03d5b4e693bd9} 
+int executable\+\_\+condition (\begin{DoxyParamCaption}\item[{pid\+\_\+t}]{pid}{, }\item[{\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{input}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Executes a child process or handles post-\/fork behavior. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pid} & Process ID returned from fork. \\
+\hline
+{\em data} & Pointer to main shell context. \\
+\hline
+{\em input} & Raw input string. \\
+\hline
+{\em index} & Index of command in command list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Exit code of the child process or error. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos_8h_a865e175d4567846a96a8403480e47448}\index{shell\_protos.h@{shell\_protos.h}!execute\_builtins@{execute\_builtins}}
+\index{execute\_builtins@{execute\_builtins}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{execute\_builtins()}{execute\_builtins()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a865e175d4567846a96a8403480e47448} 
+int execute\+\_\+builtins (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\mbox{\hyperlink{struct_8h_ab1077483b1a0b074e8bdb232161d1248}{functions\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{functions}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{check}{}\end{DoxyParamCaption})}
+
+
+
+Executes a built-\/in command if one matches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Argument context. \\
+\hline
+{\em functions} & Built-\/in function table. \\
+\hline
+{\em check} & Output\+: set if a built-\/in was matched. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return value of executed built-\/in or -\/1. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos_8h_a4987e1daef8639468791fa91b1afd904}\index{shell\_protos.h@{shell\_protos.h}!free\_functions@{free\_functions}}
+\index{free\_functions@{free\_functions}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{free\_functions()}{free\_functions()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a4987e1daef8639468791fa91b1afd904} 
+int free\+\_\+functions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{int}]{return\+\_\+val}{}\end{DoxyParamCaption})}
+
+
+
+Frees all function-\/related memory in shell data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Shell state structure. \\
+\hline
+{\em return\+\_\+val} & Exit status. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same return\+\_\+val for chaining. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos_8h_a1f2d6b9dbef5e19453610451f5ba07e1}\index{shell\_protos.h@{shell\_protos.h}!init\_aliases@{init\_aliases}}
+\index{init\_aliases@{init\_aliases}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{init\_aliases()}{init\_aliases()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a1f2d6b9dbef5e19453610451f5ba07e1} 
+int init\+\_\+aliases (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the alias list. 
+
+\Hypertarget{shell__protos_8h_a442c522caf28ff0eb6dddeb322ea0af1}\index{shell\_protos.h@{shell\_protos.h}!init\_data@{init\_data}}
+\index{init\_data@{init\_data}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{init\_data()}{init\_data()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a442c522caf28ff0eb6dddeb322ea0af1} 
+int init\+\_\+data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{envp}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Initializes the global shell data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to the data structure. \\
+\hline
+{\em envp} & Array of environment variables. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos_8h_a58fdb2450bcf83696f9e64c5a01576ed}\index{shell\_protos.h@{shell\_protos.h}!init\_environment@{init\_environment}}
+\index{init\_environment@{init\_environment}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{init\_environment()}{init\_environment()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a58fdb2450bcf83696f9e64c5a01576ed} 
+int init\+\_\+environment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{envp}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Initializes the environment variable list. 
+
+\Hypertarget{shell__protos_8h_a157eef18c5900cbe7bda1cba7b37534a}\index{shell\_protos.h@{shell\_protos.h}!init\_function\_list@{init\_function\_list}}
+\index{init\_function\_list@{init\_function\_list}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{init\_function\_list()}{init\_function\_list()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a157eef18c5900cbe7bda1cba7b37534a} 
+\mbox{\hyperlink{struct_8h_ab1077483b1a0b074e8bdb232161d1248}{functions\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} init\+\_\+function\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_ab1077483b1a0b074e8bdb232161d1248}{functions\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{functions}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the table of built-\/in functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em functions} & Preallocated function table (optional). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Initialized function table. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos_8h_a1ee52248d822eec74d7f5a3d4042bde1}\index{shell\_protos.h@{shell\_protos.h}!my\_alias@{my\_alias}}
+\index{my\_alias@{my\_alias}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{my\_alias()}{my\_alias()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a1ee52248d822eec74d7f5a3d4042bde1} 
+int my\+\_\+alias (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Defines or displays aliases. 
+
+\Hypertarget{shell__protos_8h_a557ddf468da0f667506c41b2c2deea8e}\index{shell\_protos.h@{shell\_protos.h}!my\_cd@{my\_cd}}
+\index{my\_cd@{my\_cd}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{my\_cd()}{my\_cd()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a557ddf468da0f667506c41b2c2deea8e} 
+int my\+\_\+cd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Changes the current working directory. 
+
+\Hypertarget{shell__protos_8h_ad151b7ff2ceb7dfad7e2c6fca2c71f2f}\index{shell\_protos.h@{shell\_protos.h}!my\_env@{my\_env}}
+\index{my\_env@{my\_env}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{my\_env()}{my\_env()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_ad151b7ff2ceb7dfad7e2c6fca2c71f2f} 
+int my\+\_\+env (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Displays the environment variables. 
+
+\Hypertarget{shell__protos_8h_a74c305d2f62338952971eba30cf9104d}\index{shell\_protos.h@{shell\_protos.h}!my\_exit@{my\_exit}}
+\index{my\_exit@{my\_exit}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{my\_exit()}{my\_exit()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a74c305d2f62338952971eba30cf9104d} 
+int my\+\_\+exit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Exits the shell with a specified status. 
+
+\Hypertarget{shell__protos_8h_aa61d8b4f18267d345ef5d6dade5eae9b}\index{shell\_protos.h@{shell\_protos.h}!my\_history@{my\_history}}
+\index{my\_history@{my\_history}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{my\_history()}{my\_history()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_aa61d8b4f18267d345ef5d6dade5eae9b} 
+int my\+\_\+history (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Displays the shell\textquotesingle{}s command history. 
+
+\Hypertarget{shell__protos_8h_a12e30fcc8b33ebc04277200b1b7b8dbd}\index{shell\_protos.h@{shell\_protos.h}!my\_setenv@{my\_setenv}}
+\index{my\_setenv@{my\_setenv}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{my\_setenv()}{my\_setenv()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a12e30fcc8b33ebc04277200b1b7b8dbd} 
+int my\+\_\+setenv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Built-\/in implementation of {\ttfamily setenv}. 
+
+\Hypertarget{shell__protos_8h_a0a09db6fedaf0442473d79141d81e6cf}\index{shell\_protos.h@{shell\_protos.h}!my\_unalias@{my\_unalias}}
+\index{my\_unalias@{my\_unalias}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{my\_unalias()}{my\_unalias()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a0a09db6fedaf0442473d79141d81e6cf} 
+int my\+\_\+unalias (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Executes the {\ttfamily unalias} built-\/in. 
+
+\Hypertarget{shell__protos_8h_af1d60f364ff1b254efe3a708803dbcde}\index{shell\_protos.h@{shell\_protos.h}!my\_unsetenv@{my\_unsetenv}}
+\index{my\_unsetenv@{my\_unsetenv}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{my\_unsetenv()}{my\_unsetenv()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_af1d60f364ff1b254efe3a708803dbcde} 
+int my\+\_\+unsetenv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Removes environment variables. 
+
+\Hypertarget{shell__protos_8h_a37fe639f5c9352427d925585e9ab9a20}\index{shell\_protos.h@{shell\_protos.h}!my\_where@{my\_where}}
+\index{my\_where@{my\_where}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{my\_where()}{my\_where()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a37fe639f5c9352427d925585e9ab9a20} 
+int my\+\_\+where (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Executes the {\ttfamily where} built-\/in. 
+
+\Hypertarget{shell__protos_8h_a687dd3dadc4458d13aafc2505f1f934d}\index{shell\_protos.h@{shell\_protos.h}!old\_pwd@{old\_pwd}}
+\index{old\_pwd@{old\_pwd}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{old\_pwd()}{old\_pwd()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a687dd3dadc4458d13aafc2505f1f934d} 
+int old\+\_\+pwd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves the old working directory. 
+
+\Hypertarget{shell__protos_8h_a445b1d07346a235717057811d6f53e4a}\index{shell\_protos.h@{shell\_protos.h}!rev\_list@{rev\_list}}
+\index{rev\_list@{rev\_list}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{rev\_list()}{rev\_list()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a445b1d07346a235717057811d6f53e4a} 
+void rev\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_abae4a11d2d1c207fb398528adc8a4941}{environ\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{environ}{}\end{DoxyParamCaption})}
+
+
+
+Reverses the environment variable linked list. 
+
+\Hypertarget{shell__protos_8h_a75796dc4a748b7228abf79e08cbf8621}\index{shell\_protos.h@{shell\_protos.h}!shell@{shell}}
+\index{shell@{shell}!shell\_protos.h@{shell\_protos.h}}
+\doxysubsubsection{\texorpdfstring{shell()}{shell()}}
+{\footnotesize\ttfamily \label{shell__protos_8h_a75796dc4a748b7228abf79e08cbf8621} 
+int shell (\begin{DoxyParamCaption}\item[{char const \texorpdfstring{$\ast$}{*}}]{envp}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Main shell loop entry point. 
+
+Initializes shell data and begins input loop.
+
+
+\begin{DoxyParams}{Parameters}
+{\em envp} & Array of environment variables. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Exit status code of the shell. 
+\end{DoxyReturn}

@@ -1,0 +1,59 @@
+\doxysection{which\+\_\+s Struct Reference}
+\hypertarget{structwhich__s}{}\label{structwhich__s}\index{which\_s@{which\_s}}
+
+
+Structure for tracking {\ttfamily which} command state and search results.  
+
+
+
+
+{\ttfamily \#include $<$which.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structwhich__s_ac97a8988611a0b031052957c5f158532}{flag\+\_\+a}}
+\item 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structwhich__s_a38f25c0be1aaef16417a57ef81798a06}{directories}}
+\item 
+int \mbox{\hyperlink{structwhich__s_a3d8b46e620b519a0bd214287406f8cbf}{valid\+\_\+count}}
+\item 
+int \mbox{\hyperlink{structwhich__s_abe880e97a2cb3331c0822d79f6c2da62}{saved\+\_\+result}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure for tracking {\ttfamily which} command state and search results. 
+
+Used to store options, directories searched, and results of path resolution. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structwhich__s_a38f25c0be1aaef16417a57ef81798a06}\index{which\_s@{which\_s}!directories@{directories}}
+\index{directories@{directories}!which\_s@{which\_s}}
+\doxysubsubsection{\texorpdfstring{directories}{directories}}
+{\footnotesize\ttfamily \label{structwhich__s_a38f25c0be1aaef16417a57ef81798a06} 
+char\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} which\+\_\+s\+::directories}
+
+List of directories to search in PATH \Hypertarget{structwhich__s_ac97a8988611a0b031052957c5f158532}\index{which\_s@{which\_s}!flag\_a@{flag\_a}}
+\index{flag\_a@{flag\_a}!which\_s@{which\_s}}
+\doxysubsubsection{\texorpdfstring{flag\_a}{flag\_a}}
+{\footnotesize\ttfamily \label{structwhich__s_ac97a8988611a0b031052957c5f158532} 
+int which\+\_\+s\+::flag\+\_\+a}
+
+If set, show all matching paths ({\ttfamily -\/a} flag) \Hypertarget{structwhich__s_abe880e97a2cb3331c0822d79f6c2da62}\index{which\_s@{which\_s}!saved\_result@{saved\_result}}
+\index{saved\_result@{saved\_result}!which\_s@{which\_s}}
+\doxysubsubsection{\texorpdfstring{saved\_result}{saved\_result}}
+{\footnotesize\ttfamily \label{structwhich__s_abe880e97a2cb3331c0822d79f6c2da62} 
+int which\+\_\+s\+::saved\+\_\+result}
+
+Return status code (0 = found, 1 = not found) \Hypertarget{structwhich__s_a3d8b46e620b519a0bd214287406f8cbf}\index{which\_s@{which\_s}!valid\_count@{valid\_count}}
+\index{valid\_count@{valid\_count}!which\_s@{which\_s}}
+\doxysubsubsection{\texorpdfstring{valid\_count}{valid\_count}}
+{\footnotesize\ttfamily \label{structwhich__s_a3d8b46e620b519a0bd214287406f8cbf} 
+int which\+\_\+s\+::valid\+\_\+count}
+
+Number of valid paths found 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{which_8h}{which.\+h}}\end{DoxyCompactItemize}

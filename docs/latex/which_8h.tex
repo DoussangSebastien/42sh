@@ -1,0 +1,90 @@
+\doxysection{which.\+h File Reference}
+\hypertarget{which_8h}{}\label{which_8h}\index{which.h@{which.h}}
+{\ttfamily \#include "{}struct.\+h"{}}\newline
+Include dependency graph for which.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{which_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{which_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structwhich__s}{which\+\_\+s}}
+\begin{DoxyCompactList}\small\item\em Structure for tracking {\ttfamily which} command state and search results. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structwhich__s}{which\+\_\+s}} \mbox{\hyperlink{which_8h_a037e1264c009b1b58de03add2a084d74}{which\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{which_8h_a45d2412cbf6dd69eaa68aa4e87f16ed8}{init\+\_\+which}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args, \mbox{\hyperlink{which_8h_a037e1264c009b1b58de03add2a084d74}{which\+\_\+t}} \texorpdfstring{$\ast$}{*}which)
+\begin{DoxyCompactList}\small\item\em Initializes a {\ttfamily \doxylink{which_8h_a037e1264c009b1b58de03add2a084d74}{which\+\_\+t}} structure from parsed arguments. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{which_8h_a82c27e7d474cc31a8f88d871ce73529d}{my\+\_\+which}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Main function for executing the {\ttfamily which} command logic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{which_8h_a037e1264c009b1b58de03add2a084d74}\index{which.h@{which.h}!which\_t@{which\_t}}
+\index{which\_t@{which\_t}!which.h@{which.h}}
+\doxysubsubsection{\texorpdfstring{which\_t}{which\_t}}
+{\footnotesize\ttfamily \label{which_8h_a037e1264c009b1b58de03add2a084d74} 
+typedef struct \mbox{\hyperlink{structwhich__s}{which\+\_\+s}} \mbox{\hyperlink{which_8h_a037e1264c009b1b58de03add2a084d74}{which\+\_\+t}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{which_8h_a45d2412cbf6dd69eaa68aa4e87f16ed8}\index{which.h@{which.h}!init\_which@{init\_which}}
+\index{init\_which@{init\_which}!which.h@{which.h}}
+\doxysubsubsection{\texorpdfstring{init\_which()}{init\_which()}}
+{\footnotesize\ttfamily \label{which_8h_a45d2412cbf6dd69eaa68aa4e87f16ed8} 
+int init\+\_\+which (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\mbox{\hyperlink{which_8h_a037e1264c009b1b58de03add2a084d74}{which\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{which}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a {\ttfamily \doxylink{which_8h_a037e1264c009b1b58de03add2a084d74}{which\+\_\+t}} structure from parsed arguments. 
+
+Parses environment and flags, prepares directory list for search.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Pointer to current argument context. \\
+\hline
+{\em which} & Pointer to the {\ttfamily \doxylink{which_8h_a037e1264c009b1b58de03add2a084d74}{which\+\_\+t}} structure to initialize. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero on error. 
+\end{DoxyReturn}
+\Hypertarget{which_8h_a82c27e7d474cc31a8f88d871ce73529d}\index{which.h@{which.h}!my\_which@{my\_which}}
+\index{my\_which@{my\_which}!which.h@{which.h}}
+\doxysubsubsection{\texorpdfstring{my\_which()}{my\_which()}}
+{\footnotesize\ttfamily \label{which_8h_a82c27e7d474cc31a8f88d871ce73529d} 
+int my\+\_\+which (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Main function for executing the {\ttfamily which} command logic. 
+
+Uses parsed args to determine executable locations.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Pointer to the current shell argument context. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Exit status (0 = found, 1 = not found, other = error). 
+\end{DoxyReturn}

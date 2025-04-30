@@ -1,0 +1,53 @@
+\doxysection{environ\+\_\+s Struct Reference}
+\hypertarget{structenviron__s}{}\label{structenviron__s}\index{environ\_s@{environ\_s}}
+
+
+Represents an environment variable in a linked list.  
+
+
+
+
+{\ttfamily \#include $<$struct.\+h$>$}
+
+
+
+Collaboration diagram for environ\+\_\+s\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{structenviron__s__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structenviron__s_ab632779ec41a6fa829b956bb3744ad21}{variable}}
+\item 
+struct \mbox{\hyperlink{structenviron__s}{environ\+\_\+s}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structenviron__s_a2b3f30d9b55491abfc22f870a83f9e0e}{next}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an environment variable in a linked list. 
+
+Used to track environment variables internally in the shell. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structenviron__s_a2b3f30d9b55491abfc22f870a83f9e0e}\index{environ\_s@{environ\_s}!next@{next}}
+\index{next@{next}!environ\_s@{environ\_s}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \label{structenviron__s_a2b3f30d9b55491abfc22f870a83f9e0e} 
+struct \mbox{\hyperlink{structenviron__s}{environ\+\_\+s}}\texorpdfstring{$\ast$}{*} environ\+\_\+s\+::next}
+
+Next variable in the list \Hypertarget{structenviron__s_ab632779ec41a6fa829b956bb3744ad21}\index{environ\_s@{environ\_s}!variable@{variable}}
+\index{variable@{variable}!environ\_s@{environ\_s}}
+\doxysubsubsection{\texorpdfstring{variable}{variable}}
+{\footnotesize\ttfamily \label{structenviron__s_ab632779ec41a6fa829b956bb3744ad21} 
+char\texorpdfstring{$\ast$}{*} environ\+\_\+s\+::variable}
+
+Full variable string in the form NAME=VALUE 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_8h}{struct.\+h}}\end{DoxyCompactItemize}

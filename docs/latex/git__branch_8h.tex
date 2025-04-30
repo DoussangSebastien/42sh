@@ -1,0 +1,82 @@
+\doxysection{git\+\_\+branch.\+h File Reference}
+\hypertarget{git__branch_8h}{}\label{git__branch_8h}\index{git\_branch.h@{git\_branch.h}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{git__branch_8h_a08d85eb0c7bc930f3f77eab3f2b23fc5}{display\+\_\+current\+\_\+branch}} (char \texorpdfstring{$\ast$}{*}path)
+\item 
+int \mbox{\hyperlink{git__branch_8h_ac0026b9f63a1769d8d46457bd418198a}{is\+\_\+git\+\_\+repo}} (const char \texorpdfstring{$\ast$}{*}path, int end)
+\item 
+int \mbox{\hyperlink{git__branch_8h_a3bb4a4a10ca927e0094ca7e87e8d11c2}{get\+\_\+path\+\_\+index}} (char \texorpdfstring{$\ast$}{*}path, int stop)
+\item 
+void \mbox{\hyperlink{git__branch_8h_a9c1213fd424078a1262828d4a87b5ff9}{find\+\_\+repo\+\_\+root}} (char \texorpdfstring{$\ast$}{*}path)
+\item 
+void \mbox{\hyperlink{git__branch_8h_aff2c152ba7a55e249b59df35f432b0e4}{write\+\_\+colored}} (int fd, const char \texorpdfstring{$\ast$}{*}color, const char \texorpdfstring{$\ast$}{*}text, int reset)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{git__branch_8h_a08d85eb0c7bc930f3f77eab3f2b23fc5}\index{git\_branch.h@{git\_branch.h}!display\_current\_branch@{display\_current\_branch}}
+\index{display\_current\_branch@{display\_current\_branch}!git\_branch.h@{git\_branch.h}}
+\doxysubsubsection{\texorpdfstring{display\_current\_branch()}{display\_current\_branch()}}
+{\footnotesize\ttfamily \label{git__branch_8h_a08d85eb0c7bc930f3f77eab3f2b23fc5} 
+void display\+\_\+current\+\_\+branch (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{path}{}\end{DoxyParamCaption})}
+
+@display current github repo branch. 
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to github repo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+display of current branch 
+\end{DoxyReturn}
+\Hypertarget{git__branch_8h_a9c1213fd424078a1262828d4a87b5ff9}\index{git\_branch.h@{git\_branch.h}!find\_repo\_root@{find\_repo\_root}}
+\index{find\_repo\_root@{find\_repo\_root}!git\_branch.h@{git\_branch.h}}
+\doxysubsubsection{\texorpdfstring{find\_repo\_root()}{find\_repo\_root()}}
+{\footnotesize\ttfamily \label{git__branch_8h_a9c1213fd424078a1262828d4a87b5ff9} 
+void find\+\_\+repo\+\_\+root (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{path}{}\end{DoxyParamCaption})}
+
+@display repo from root. 
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to github repo @display the repo from root if it\textquotesingle{}s a repo. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{git__branch_8h_a3bb4a4a10ca927e0094ca7e87e8d11c2}\index{git\_branch.h@{git\_branch.h}!get\_path\_index@{get\_path\_index}}
+\index{get\_path\_index@{get\_path\_index}!git\_branch.h@{git\_branch.h}}
+\doxysubsubsection{\texorpdfstring{get\_path\_index()}{get\_path\_index()}}
+{\footnotesize\ttfamily \label{git__branch_8h_a3bb4a4a10ca927e0094ca7e87e8d11c2} 
+int get\+\_\+path\+\_\+index (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{path}{, }\item[{int}]{stop}{}\end{DoxyParamCaption})}
+
+\Hypertarget{git__branch_8h_ac0026b9f63a1769d8d46457bd418198a}\index{git\_branch.h@{git\_branch.h}!is\_git\_repo@{is\_git\_repo}}
+\index{is\_git\_repo@{is\_git\_repo}!git\_branch.h@{git\_branch.h}}
+\doxysubsubsection{\texorpdfstring{is\_git\_repo()}{is\_git\_repo()}}
+{\footnotesize\ttfamily \label{git__branch_8h_ac0026b9f63a1769d8d46457bd418198a} 
+int is\+\_\+git\+\_\+repo (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{path}{, }\item[{int}]{end}{}\end{DoxyParamCaption})}
+
+@check if current directory is a github repo. 
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to github repo \\
+\hline
+{\em end} & Number of char in path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1/0 depending is directory is a github repo. 
+\end{DoxyReturn}
+\Hypertarget{git__branch_8h_aff2c152ba7a55e249b59df35f432b0e4}\index{git\_branch.h@{git\_branch.h}!write\_colored@{write\_colored}}
+\index{write\_colored@{write\_colored}!git\_branch.h@{git\_branch.h}}
+\doxysubsubsection{\texorpdfstring{write\_colored()}{write\_colored()}}
+{\footnotesize\ttfamily \label{git__branch_8h_aff2c152ba7a55e249b59df35f432b0e4} 
+void write\+\_\+colored (\begin{DoxyParamCaption}\item[{int}]{fd}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{color}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{text}{, }\item[{int}]{reset}{}\end{DoxyParamCaption})}
+
+@write with color. 
+\begin{DoxyParams}{Parameters}
+{\em fd} & Output of your choice \\
+\hline
+{\em color} & ANSI color code of your choice \\
+\hline
+{\em text} & Text to write \\
+\hline
+{\em reset} & Option to reset color @write text in color in output of choice and possibility to reset color. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,82 @@
+\doxysection{shell\+\_\+protos\+\_\+2.\+h}
+\hypertarget{shell__protos__2_8h_source}{}\label{shell__protos__2_8h_source}\index{shell\_protos\_2.h@{shell\_protos\_2.h}}
+\mbox{\hyperlink{shell__protos__2_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ Edgar\ Duquesne}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ shel\_protos.h}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ PROTOS\_2}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ PROTOS\_2}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{struct_8h}{struct.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{set__protos_8h}{set\_protos.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ <stdlib.h>}}
+\DoxyCodeLine{00020\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{shell__protos__2_8h_ae3e09bf097440a379ef55d7cfb4350e2}{free\_vars}}(\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\_t}}\ *head);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{shell__protos__2_8h_a942cefe10029a0bea377ca72ff96aa1c}{my\_set}}(\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\_t}}\ *args);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00040\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{shell__protos__2_8h_a4dd233f172f948d352734801b0023a9e}{my\_unset}}(\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\_t}}\ *args);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00051\ \textcolor{keywordtype}{char}\ **\mbox{\hyperlink{shell__protos__2_8h_a9c220ba1ad68bf5b03776249203efeac}{line\_parser}}(\textcolor{keywordtype}{char}\ *line,\ \mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\_t}}\ *data);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00060\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{shell__protos__2_8h_ab3468da561335c5a14de73437410df4c}{excluded}}(\textcolor{keywordtype}{char}\ c,\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *n);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00068\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{shell__protos__2_8h_abc6770606682af375b92e04ea54d3972}{count\_words}}(\textcolor{keywordtype}{char}\ *str);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00078\ \mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}}\ *\mbox{\hyperlink{shell__protos__2_8h_a15e4a298a8341b425554bf705163e9ec}{create\_node}}(\textcolor{keywordtype}{int}\ type,\ \textcolor{keywordtype}{char}\ *fname,\ \textcolor{keywordtype}{char}\ **command);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00086\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{shell__protos__2_8h_af8280180034ec5c36ccd7b4f02c88a3b}{get\_arg\_type}}(\textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *argument);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00096\ \mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}}\ *\mbox{\hyperlink{shell__protos__2_8h_a178fa4d136b2aa8975c35e1227b49917}{split\_redir}}(\textcolor{keywordtype}{char}\ **command\_line,\ \textcolor{keywordtype}{int}\ start,\ \textcolor{keywordtype}{int}\ end);}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00106\ \mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}}\ *\mbox{\hyperlink{shell__protos__2_8h_a3d4b435fb881f2b4aa3d8ce760eb4cdd}{load\_command}}(\textcolor{keywordtype}{char}\ **command,\ \textcolor{keywordtype}{int}\ start,\ \textcolor{keywordtype}{int}\ end);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00117\ \mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}}\ *\mbox{\hyperlink{shell__protos__2_8h_a28c9cb6a5ff9b0261c31318ec1811ac4}{generate\_tree}}(\textcolor{keywordtype}{char}\ *line,\ \mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\_t}}\ *data);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00128\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{shell__protos__2_8h_af25c24a447f8f5c37f390fdb74d70c5f}{execute\_tree}}(\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}}\ *root,\ \mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\_t}}\ *data);}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00141\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{shell__protos__2_8h_aba936821a5b23d5be7cd1aeabed18a00}{exec\_command}}(pid\_t\ pid,\ \mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\_t}}\ *args,\ \textcolor{keywordtype}{char}\ *path,\ \mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\_t}}\ *data);}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00152\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{shell__protos__2_8h_a379cee6b1362f9e27a32512dec807f91}{handle\_redirect}}(\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}}\ *tree,\ \mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\_t}}\ *data);}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00161\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{shell__protos__2_8h_a4605e6e4c7f24dd7e5f6dead89995647}{free\_tree}}(\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}}\ *tree);}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00171\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{shell__protos__2_8h_a96fadbe43b1981cc437d636a9357a4bb}{binary\_error\_parser}}(\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}}\ *tree);}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00181\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{shell__protos__2_8h_ab5ab0ac9a9b3003f0b456f08f5bd30fe}{display\_error}}(\textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *error\_message);}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00191\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{shell__protos__2_8h_a6c8def121385f7b8068ca40eaf7dec24}{check\_right\_redir}}(\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}}\ *tree);}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00201\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{shell__protos__2_8h_aec99103317fbb76f524fa82d7ccc75e9}{check\_left\_redir}}(\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}}\ *tree);}
+\DoxyCodeLine{00202\ }
+\DoxyCodeLine{00211\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{shell__protos__2_8h_a3a0e527e69d3d306dd71b0006eead474}{check\_pipe}}(\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}}\ *tree);}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00221\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{shell__protos__2_8h_ae252d1157a9010cea89ddc9ae52cb789}{check\_linear\_args}}(\textcolor{keywordtype}{char}\ **command);}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00231\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{shell__protos__2_8h_a673330451df3402fd4512358e67858be}{compare\_aliases}}(\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\_t}}\ *data);}
+\DoxyCodeLine{00232\ }
+\DoxyCodeLine{00241\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{shell__protos__2_8h_af2441adf9e5370b578d02abf3863e1cc}{check\_parenthesis}}(\textcolor{keywordtype}{char}\ **cmd\_line);}
+\DoxyCodeLine{00242\ }
+\DoxyCodeLine{00251\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{shell__protos__2_8h_a32b77847d3e55c0309c2eccb086e0d0a}{execute\_pipe}}(\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}}\ *tree,\ \mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\_t}}\ *data);}
+\DoxyCodeLine{00252\ }
+\DoxyCodeLine{00263\ \mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}}\ *\mbox{\hyperlink{shell__protos__2_8h_a7f768b0c896e2a34504debbb8b4c1c75}{split\_pipe}}(\textcolor{keywordtype}{char}\ **command\_line,\ \textcolor{keywordtype}{int}\ start,\ \textcolor{keywordtype}{int}\ end);}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00275\ \mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}}\ *\mbox{\hyperlink{shell__protos__2_8h_a62664bbde9bb1d73ab00a07007aa5cbf}{split\_semicolon}}(\textcolor{keywordtype}{char}\ **command\_line,\ \textcolor{keywordtype}{int}\ start,\ \textcolor{keywordtype}{int}\ end);}
+\DoxyCodeLine{00276\ }
+\DoxyCodeLine{00287\ \mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}}\ *\mbox{\hyperlink{shell__protos__2_8h_a57bf42e566d92a8efde7daed6cda7616}{split\_open\_p}}(\textcolor{keywordtype}{char}\ **command\_line,\ \textcolor{keywordtype}{int}\ start,\ \textcolor{keywordtype}{int}\ end);}
+\DoxyCodeLine{00288\ }
+\DoxyCodeLine{00298\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{shell__protos__2_8h_a56ac127a4080aaf3f3318ab07bcd215a}{execute\_subshell}}(\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}}\ *root,\ \mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\_t}}\ *data);}
+\DoxyCodeLine{00299\ }
+\DoxyCodeLine{00307\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{shell__protos__2_8h_a65b911a3a42c78a5a484b61d2199f764}{print\_tree}}(\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}}\ *root);}
+\DoxyCodeLine{00308\ }
+\DoxyCodeLine{00316\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{shell__protos__2_8h_a3a1285415a3e99d971f0f2773fd3a3e8}{interpret\_command}}(\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\_t}}\ *data);}
+\DoxyCodeLine{00317\ }
+\DoxyCodeLine{00323\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{shell__protos__2_8h_acb99be969a83b88957b842df172b62d2}{prompt}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00324\ }
+\DoxyCodeLine{00334\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{shell__protos__2_8h_a43fc7f3895b0243d669604d68d0f5de8}{build\_command}}(\textcolor{keywordtype}{char}\ *argument,\ \mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\_t}}\ *data);}
+\DoxyCodeLine{00335\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

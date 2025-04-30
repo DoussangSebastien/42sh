@@ -1,0 +1,57 @@
+\doxysection{globbings.\+h File Reference}
+\hypertarget{globbings_8h}{}\label{globbings_8h}\index{globbings.h@{globbings.h}}
+{\ttfamily \#include "{}struct.\+h"{}}\newline
+Include dependency graph for globbings.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{globbings_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{globbings_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{globbings_8h_a6a53cd532204744d6b21dcd130009d7b}{tokenize\+\_\+glob}} (const char \texorpdfstring{$\ast$}{*}pattern)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{globbings_8h_a2feebe04cab7ee7a7279a3374121b16c}{produce\+\_\+glob}} (const char \texorpdfstring{$\ast$}{*}input\+\_\+glob)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{globbings_8h_a2feebe04cab7ee7a7279a3374121b16c}\index{globbings.h@{globbings.h}!produce\_glob@{produce\_glob}}
+\index{produce\_glob@{produce\_glob}!globbings.h@{globbings.h}}
+\doxysubsubsection{\texorpdfstring{produce\_glob()}{produce\_glob()}}
+{\footnotesize\ttfamily \label{globbings_8h_a2feebe04cab7ee7a7279a3374121b16c} 
+char \texorpdfstring{$\ast$}{*} produce\+\_\+glob (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{input\+\_\+glob}{}\end{DoxyParamCaption})}
+
+@create the glob. 
+\begin{DoxyParams}{Parameters}
+{\em input\+\_\+glob} & Formatted pattern writen by USER \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+all matches based on the input glob. 
+\end{DoxyReturn}
+\Hypertarget{globbings_8h_a6a53cd532204744d6b21dcd130009d7b}\index{globbings.h@{globbings.h}!tokenize\_glob@{tokenize\_glob}}
+\index{tokenize\_glob@{tokenize\_glob}!globbings.h@{globbings.h}}
+\doxysubsubsection{\texorpdfstring{tokenize\_glob()}{tokenize\_glob()}}
+{\footnotesize\ttfamily \label{globbings_8h_a6a53cd532204744d6b21dcd130009d7b} 
+char \texorpdfstring{$\ast$}{*} tokenize\+\_\+glob (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{pattern}{}\end{DoxyParamCaption})}
+
+@format globs. 
+\begin{DoxyParams}{Parameters}
+{\em pattern} & Input glob \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a usable glog pattern for libs. 
+\end{DoxyReturn}

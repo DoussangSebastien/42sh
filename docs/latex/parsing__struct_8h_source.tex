@@ -1,0 +1,40 @@
+\doxysection{parsing\+\_\+struct.\+h}
+\hypertarget{parsing__struct_8h_source}{}\label{parsing__struct_8h_source}\index{parsing\_struct.h@{parsing\_struct.h}}
+\mbox{\hyperlink{parsing__struct_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ Edgar\ Duquesne}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ shel\_protos.h}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ PARSER}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ PARSER}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00017\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238}{arg\_type}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a9bc832fa28809fb974f6ce5bb0cc7117}{PIPE}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a74c33ffe88ba7ede215485f180bf3eec}{PIPE2}},\ \ \ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a506a3096ffca9980752e4fe3b5456fa1}{REDIR\_R}},\ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a5936f7854ecb0774cb8145589911856d}{REDIR\_RR}},\ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a9f35ec4aaeaccf4b3d043dfe6c4ed094}{REDIR\_L}},\ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a02aeee99650cba9bbd7adf2d9499dbf5}{REDIR\_LL}},\ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a1272bd41379fcfdfa4206f9fc0b7d588}{SEMI\_COLON}},\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a1cb3492b94a37b0728ee34d5dc3d08f2}{OPEN\_P}},\ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a9ea3f167d8265e0e3a6e7f6ed347b785}{CLOSE\_P}},\ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a865555c9f2e0458a7078486aa1b3254f}{AND}},\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a8abd3fd7065b2c9ea58941901837762e}{AND2}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238aa08ab92d27d76b8b77a5f4d551ced4a2}{ARG}},\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a5b880c0d9ff6a554ee59a21b93be6b54}{SUBSHELL}},\ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238aef2863a469df3ea6871d640e3669a2f2}{INVALID}}\ \ \ \ \ }
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtree__s}{tree\_s}}\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{char}\ **\mbox{\hyperlink{structtree__s_ae7df8263935957a0482ad4006d6dfa2c}{command}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structtree__s_a7e6330f8286a78857a8e701873df07d5}{file\_name}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238}{arg\_type}}\ \mbox{\hyperlink{structtree__s_a248faec04c4dc2e8f9a14a9fb7a1949e}{argument\_type}};\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtree__s}{tree\_s}}\ *\mbox{\hyperlink{structtree__s_a61c2d6d26718038a33745fee5c7cf1e0}{left}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtree__s}{tree\_s}}\ *\mbox{\hyperlink{structtree__s_ace3dc18db900ffbb597ddf3974082678}{right}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00047\ \}\ \mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\_t}};}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

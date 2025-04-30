@@ -1,0 +1,61 @@
+\doxysection{var\+\_\+s Struct Reference}
+\hypertarget{structvar__s}{}\label{structvar__s}\index{var\_s@{var\_s}}
+
+
+Represents a single shell variable (name-\/value pair).  
+
+
+
+
+{\ttfamily \#include $<$set\+\_\+struct.\+h$>$}
+
+
+
+Collaboration diagram for var\+\_\+s\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{structvar__s__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structvar__s_aa6a4bcd0cdc23a925f23954ebd5db924}{name}}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structvar__s_ade0bdcc039ec2809855a2884802d5d75}{value}}
+\item 
+struct \mbox{\hyperlink{structvar__s}{var\+\_\+s}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structvar__s_a86de65d62ab65133bd782e73456b4a15}{next}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a single shell variable (name-\/value pair). 
+
+This structure stores a variable name and its associated value. The list is singly linked to allow efficient insertion and traversal. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structvar__s_aa6a4bcd0cdc23a925f23954ebd5db924}\index{var\_s@{var\_s}!name@{name}}
+\index{name@{name}!var\_s@{var\_s}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{structvar__s_aa6a4bcd0cdc23a925f23954ebd5db924} 
+char\texorpdfstring{$\ast$}{*} var\+\_\+s\+::name}
+
+Name of the variable \Hypertarget{structvar__s_a86de65d62ab65133bd782e73456b4a15}\index{var\_s@{var\_s}!next@{next}}
+\index{next@{next}!var\_s@{var\_s}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \label{structvar__s_a86de65d62ab65133bd782e73456b4a15} 
+struct \mbox{\hyperlink{structvar__s}{var\+\_\+s}}\texorpdfstring{$\ast$}{*} var\+\_\+s\+::next}
+
+Pointer to the next variable in the list \Hypertarget{structvar__s_ade0bdcc039ec2809855a2884802d5d75}\index{var\_s@{var\_s}!value@{value}}
+\index{value@{value}!var\_s@{var\_s}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily \label{structvar__s_ade0bdcc039ec2809855a2884802d5d75} 
+char\texorpdfstring{$\ast$}{*} var\+\_\+s\+::value}
+
+Value associated with the variable 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{set__struct_8h}{set\+\_\+struct.\+h}}\end{DoxyCompactItemize}

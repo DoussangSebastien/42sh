@@ -1,0 +1,252 @@
+\doxysection{my.\+h File Reference}
+\hypertarget{my_8h}{}\label{my_8h}\index{my.h@{my.h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{my_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{my_8h_acfc5d69edef049c3fe6c3a4a724654d2}{my\+\_\+putstr}} (char const \texorpdfstring{$\ast$}{*}str)
+\item 
+int \mbox{\hyperlink{my_8h_a3b3960588932459570799afa357e32b5}{my\+\_\+strlen}} (char const \texorpdfstring{$\ast$}{*}str)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{my_8h_a61919d57c190026e8dd6fa1ea51b756a}{my\+\_\+strstr}} (char \texorpdfstring{$\ast$}{*}str, char const \texorpdfstring{$\ast$}{*}to\+\_\+find)
+\item 
+int \mbox{\hyperlink{my_8h_a76f407b79bebd876f5aab294050a896e}{my\+\_\+put\+\_\+nbr}} (int num, int port)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{my_8h_ad80a3532caecf004360141e274e0708d}{my\+\_\+strdup}} (char \texorpdfstring{$\ast$}{*}str)
+\item 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{my_8h_a64e5bc62ecb5fa80756955574653199e}{my\+\_\+duptab}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}tab)
+\item 
+int \mbox{\hyperlink{my_8h_a82df5be1f3ffc9a6c980fa963a3d2800}{my\+\_\+getnbr}} (char const \texorpdfstring{$\ast$}{*}str)
+\item 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{my_8h_a5fdf7366a1c9a11ecb9517465753a895}{my\+\_\+str\+\_\+to\+\_\+word\+\_\+array\+\_\+n}} (char const \texorpdfstring{$\ast$}{*}str, char const \texorpdfstring{$\ast$}{*}spec)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{my_8h_aa6386bacc109fe5e088fa6b21aefda38}{my\+\_\+strcat}} (char \texorpdfstring{$\ast$}{*}dest, char const \texorpdfstring{$\ast$}{*}src)
+\item 
+void \mbox{\hyperlink{my_8h_ad8edc97378065e565267cbe430bf0800}{my\+\_\+free\+\_\+word\+\_\+array}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}tab)
+\item 
+int \mbox{\hyperlink{my_8h_aecd425cb14e2894fc4c1f2ca6aa777f9}{is\+\_\+alpha}} (char c)
+\item 
+int \mbox{\hyperlink{my_8h_a5bebd1e8ddecb2b94da13e1017b90d52}{my\+\_\+strcmp}} (char const \texorpdfstring{$\ast$}{*}str\+\_\+1, char const \texorpdfstring{$\ast$}{*}str\+\_\+2)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{my_8h_a3b2549654baa7552663c0bdd89c073f9}{add\+\_\+str}} (char \texorpdfstring{$\ast$}{*}input\+\_\+2, char \texorpdfstring{$\ast$}{*}input)
+\item 
+int \mbox{\hyperlink{my_8h_abb56e5845c808f585ea091e255a54636}{is\+\_\+alphanumeric}} (const char \texorpdfstring{$\ast$}{*}str)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{my_8h_a3b2549654baa7552663c0bdd89c073f9}\index{my.h@{my.h}!add\_str@{add\_str}}
+\index{add\_str@{add\_str}!my.h@{my.h}}
+\doxysubsubsection{\texorpdfstring{add\_str()}{add\_str()}}
+{\footnotesize\ttfamily \label{my_8h_a3b2549654baa7552663c0bdd89c073f9} 
+char \texorpdfstring{$\ast$}{*} add\+\_\+str (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{input\+\_\+2}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{input}{}\end{DoxyParamCaption})}
+
+@concatenate two str. 
+\begin{DoxyParams}{Parameters}
+{\em dest} & First part of new word \\
+\hline
+{\em src} & Second part of new word \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+concatenation of dest and src if it exist else NULL. 
+\end{DoxyReturn}
+\Hypertarget{my_8h_aecd425cb14e2894fc4c1f2ca6aa777f9}\index{my.h@{my.h}!is\_alpha@{is\_alpha}}
+\index{is\_alpha@{is\_alpha}!my.h@{my.h}}
+\doxysubsubsection{\texorpdfstring{is\_alpha()}{is\_alpha()}}
+{\footnotesize\ttfamily \label{my_8h_aecd425cb14e2894fc4c1f2ca6aa777f9} 
+int is\+\_\+alpha (\begin{DoxyParamCaption}\item[{char}]{c}{}\end{DoxyParamCaption})}
+
+@check for letter. 
+\begin{DoxyParams}{Parameters}
+{\em c} & Char to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1/0 if it\textquotesingle{}s a letter or not. 
+\end{DoxyReturn}
+\Hypertarget{my_8h_abb56e5845c808f585ea091e255a54636}\index{my.h@{my.h}!is\_alphanumeric@{is\_alphanumeric}}
+\index{is\_alphanumeric@{is\_alphanumeric}!my.h@{my.h}}
+\doxysubsubsection{\texorpdfstring{is\_alphanumeric()}{is\_alphanumeric()}}
+{\footnotesize\ttfamily \label{my_8h_abb56e5845c808f585ea091e255a54636} 
+int is\+\_\+alphanumeric (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})}
+
+@check for letter and number. 
+\begin{DoxyParams}{Parameters}
+{\em str} & String to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1/0 if str only countain letters and numbers. 
+\end{DoxyReturn}
+\Hypertarget{my_8h_a64e5bc62ecb5fa80756955574653199e}\index{my.h@{my.h}!my\_duptab@{my\_duptab}}
+\index{my\_duptab@{my\_duptab}!my.h@{my.h}}
+\doxysubsubsection{\texorpdfstring{my\_duptab()}{my\_duptab()}}
+{\footnotesize\ttfamily \label{my_8h_a64e5bc62ecb5fa80756955574653199e} 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} my\+\_\+duptab (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{tab}{}\end{DoxyParamCaption})}
+
+@duplicate of str array. 
+\begin{DoxyParams}{Parameters}
+{\em tab} & String array to duplicate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the duplicate if it exist else NULL. 
+\end{DoxyReturn}
+\Hypertarget{my_8h_ad8edc97378065e565267cbe430bf0800}\index{my.h@{my.h}!my\_free\_word\_array@{my\_free\_word\_array}}
+\index{my\_free\_word\_array@{my\_free\_word\_array}!my.h@{my.h}}
+\doxysubsubsection{\texorpdfstring{my\_free\_word\_array()}{my\_free\_word\_array()}}
+{\footnotesize\ttfamily \label{my_8h_ad8edc97378065e565267cbe430bf0800} 
+void my\+\_\+free\+\_\+word\+\_\+array (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{tab}{}\end{DoxyParamCaption})}
+
+@free String array. 
+\begin{DoxyParams}{Parameters}
+{\em tab} & String array to free \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\Hypertarget{my_8h_a82df5be1f3ffc9a6c980fa963a3d2800}\index{my.h@{my.h}!my\_getnbr@{my\_getnbr}}
+\index{my\_getnbr@{my\_getnbr}!my.h@{my.h}}
+\doxysubsubsection{\texorpdfstring{my\_getnbr()}{my\_getnbr()}}
+{\footnotesize\ttfamily \label{my_8h_a82df5be1f3ffc9a6c980fa963a3d2800} 
+int my\+\_\+getnbr (\begin{DoxyParamCaption}\item[{char const \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})}
+
+@get int from str. 
+\begin{DoxyParams}{Parameters}
+{\em str} & String where int is extracted from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int extracted from str. 
+\end{DoxyReturn}
+\Hypertarget{my_8h_a76f407b79bebd876f5aab294050a896e}\index{my.h@{my.h}!my\_put\_nbr@{my\_put\_nbr}}
+\index{my\_put\_nbr@{my\_put\_nbr}!my.h@{my.h}}
+\doxysubsubsection{\texorpdfstring{my\_put\_nbr()}{my\_put\_nbr()}}
+{\footnotesize\ttfamily \label{my_8h_a76f407b79bebd876f5aab294050a896e} 
+int my\+\_\+put\+\_\+nbr (\begin{DoxyParamCaption}\item[{int}]{num}{, }\item[{int}]{port}{}\end{DoxyParamCaption})}
+
+@display of int. 
+\begin{DoxyParams}{Parameters}
+{\em num} & Int to write \\
+\hline
+{\em port} & Output where num is displayed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the int was succesfully writen. 
+\end{DoxyReturn}
+\Hypertarget{my_8h_acfc5d69edef049c3fe6c3a4a724654d2}\index{my.h@{my.h}!my\_putstr@{my\_putstr}}
+\index{my\_putstr@{my\_putstr}!my.h@{my.h}}
+\doxysubsubsection{\texorpdfstring{my\_putstr()}{my\_putstr()}}
+{\footnotesize\ttfamily \label{my_8h_acfc5d69edef049c3fe6c3a4a724654d2} 
+int my\+\_\+putstr (\begin{DoxyParamCaption}\item[{char const \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})}
+
+@display of str. 
+\begin{DoxyParams}{Parameters}
+{\em str} & String to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the str was succesfully writen 
+\end{DoxyReturn}
+\Hypertarget{my_8h_a5fdf7366a1c9a11ecb9517465753a895}\index{my.h@{my.h}!my\_str\_to\_word\_array\_n@{my\_str\_to\_word\_array\_n}}
+\index{my\_str\_to\_word\_array\_n@{my\_str\_to\_word\_array\_n}!my.h@{my.h}}
+\doxysubsubsection{\texorpdfstring{my\_str\_to\_word\_array\_n()}{my\_str\_to\_word\_array\_n()}}
+{\footnotesize\ttfamily \label{my_8h_a5fdf7366a1c9a11ecb9517465753a895} 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} my\+\_\+str\+\_\+to\+\_\+word\+\_\+array\+\_\+n (\begin{DoxyParamCaption}\item[{char const \texorpdfstring{$\ast$}{*}}]{str}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{spec}{}\end{DoxyParamCaption})}
+
+@create word array from str. 
+\begin{DoxyParams}{Parameters}
+{\em str} & String where words will be extracted from \\
+\hline
+{\em spec} & Separator between words \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the word array if it exist else NULL. 
+\end{DoxyReturn}
+\Hypertarget{my_8h_aa6386bacc109fe5e088fa6b21aefda38}\index{my.h@{my.h}!my\_strcat@{my\_strcat}}
+\index{my\_strcat@{my\_strcat}!my.h@{my.h}}
+\doxysubsubsection{\texorpdfstring{my\_strcat()}{my\_strcat()}}
+{\footnotesize\ttfamily \label{my_8h_aa6386bacc109fe5e088fa6b21aefda38} 
+char \texorpdfstring{$\ast$}{*} my\+\_\+strcat (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{dest}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{src}{}\end{DoxyParamCaption})}
+
+@concatenate two str. 
+\begin{DoxyParams}{Parameters}
+{\em dest} & First part of new word \\
+\hline
+{\em src} & Second part of new word \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+concatenation of dest and src if it exist else NULL. 
+\end{DoxyReturn}
+\Hypertarget{my_8h_a5bebd1e8ddecb2b94da13e1017b90d52}\index{my.h@{my.h}!my\_strcmp@{my\_strcmp}}
+\index{my\_strcmp@{my\_strcmp}!my.h@{my.h}}
+\doxysubsubsection{\texorpdfstring{my\_strcmp()}{my\_strcmp()}}
+{\footnotesize\ttfamily \label{my_8h_a5bebd1e8ddecb2b94da13e1017b90d52} 
+int my\+\_\+strcmp (\begin{DoxyParamCaption}\item[{char const \texorpdfstring{$\ast$}{*}}]{str\+\_\+1}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{str\+\_\+2}{}\end{DoxyParamCaption})}
+
+@compare two str. 
+\begin{DoxyParams}{Parameters}
+{\em str\+\_\+1} & First string \\
+\hline
+{\em str\+\_\+2} & Second string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of differences between the two str 
+\end{DoxyReturn}
+\Hypertarget{my_8h_ad80a3532caecf004360141e274e0708d}\index{my.h@{my.h}!my\_strdup@{my\_strdup}}
+\index{my\_strdup@{my\_strdup}!my.h@{my.h}}
+\doxysubsubsection{\texorpdfstring{my\_strdup()}{my\_strdup()}}
+{\footnotesize\ttfamily \label{my_8h_ad80a3532caecf004360141e274e0708d} 
+char \texorpdfstring{$\ast$}{*} my\+\_\+strdup (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})}
+
+@duplicate str. 
+\begin{DoxyParams}{Parameters}
+{\em str} & String to duplicate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the duplicate if it exist else NULL. 
+\end{DoxyReturn}
+\Hypertarget{my_8h_a3b3960588932459570799afa357e32b5}\index{my.h@{my.h}!my\_strlen@{my\_strlen}}
+\index{my\_strlen@{my\_strlen}!my.h@{my.h}}
+\doxysubsubsection{\texorpdfstring{my\_strlen()}{my\_strlen()}}
+{\footnotesize\ttfamily \label{my_8h_a3b3960588932459570799afa357e32b5} 
+int my\+\_\+strlen (\begin{DoxyParamCaption}\item[{char const \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})}
+
+@lenght of str. 
+\begin{DoxyParams}{Parameters}
+{\em str} & String to count \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of char in str. 
+\end{DoxyReturn}
+\Hypertarget{my_8h_a61919d57c190026e8dd6fa1ea51b756a}\index{my.h@{my.h}!my\_strstr@{my\_strstr}}
+\index{my\_strstr@{my\_strstr}!my.h@{my.h}}
+\doxysubsubsection{\texorpdfstring{my\_strstr()}{my\_strstr()}}
+{\footnotesize\ttfamily \label{my_8h_a61919d57c190026e8dd6fa1ea51b756a} 
+char \texorpdfstring{$\ast$}{*} my\+\_\+strstr (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{to\+\_\+find}{}\end{DoxyParamCaption})}
+
+@look for pattern in str. 
+\begin{DoxyParams}{Parameters}
+{\em str} & String where we look for pattern \\
+\hline
+{\em to\+\_\+find} & String we are looking for in pattern \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+str from the begining of to\+\_\+find. 
+\end{DoxyReturn}

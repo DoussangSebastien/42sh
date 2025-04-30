@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['alias_5ffile_0',['ALIAS_FILE',['../macros_8h.html#a48f574dc4e1382a55fdc3f80a57e79e4',1,'macros.h']]],
+  ['ansi_5fbg_5fblack_1',['ANSI_BG_BLACK',['../ansi__colors_8h.html#a042aa75ade32832822047c31f3c82784',1,'ansi_colors.h']]],
+  ['ansi_5fbg_5fblue_2',['ANSI_BG_BLUE',['../ansi__colors_8h.html#ac2fc1a686a710db7c510808bc5d11245',1,'ansi_colors.h']]],
+  ['ansi_5fbg_5fcyan_3',['ANSI_BG_CYAN',['../ansi__colors_8h.html#a82b95d2844098f3c5972bf2491eb9b3e',1,'ansi_colors.h']]],
+  ['ansi_5fbg_5fgreen_4',['ANSI_BG_GREEN',['../ansi__colors_8h.html#aa3f9f309f3ed73b3bf9e1750acd0fd97',1,'ansi_colors.h']]],
+  ['ansi_5fbg_5fpurple_5',['ANSI_BG_PURPLE',['../ansi__colors_8h.html#a5d3a4b3134be3abb25cc62e45ec7738d',1,'ansi_colors.h']]],
+  ['ansi_5fbg_5fred_6',['ANSI_BG_RED',['../ansi__colors_8h.html#a2e08776af362510270e8bf63a7a3ba3e',1,'ansi_colors.h']]],
+  ['ansi_5fbg_5fwhite_7',['ANSI_BG_WHITE',['../ansi__colors_8h.html#ac4a402a3b4ad9177cc17a63412eac8df',1,'ansi_colors.h']]],
+  ['ansi_5fbg_5fyellow_8',['ANSI_BG_YELLOW',['../ansi__colors_8h.html#a8ca9e4fe4a0c3eea20d0440427f18183',1,'ansi_colors.h']]],
+  ['ansi_5fblue_9',['ANSI_BLUE',['../ansi__colors_8h.html#a50a197ede59d7694515c3dad4557cf00',1,'ansi_colors.h']]],
+  ['ansi_5fbold_10',['ANSI_BOLD',['../ansi__colors_8h.html#a46587b83544b8e9be045bb93f644ac82',1,'ansi_colors.h']]],
+  ['ansi_5fcyan_11',['ANSI_CYAN',['../ansi__colors_8h.html#a8e74e295b54795a32a16ea744f6aed5e',1,'ansi_colors.h']]],
+  ['ansi_5fdim_12',['ANSI_DIM',['../ansi__colors_8h.html#a51fea81bd0f75dcc2fc1b341d9cc7958',1,'ansi_colors.h']]],
+  ['ansi_5fgreen_13',['ANSI_GREEN',['../ansi__colors_8h.html#ad050fd71ced44460a0c723a1715c40e5',1,'ansi_colors.h']]],
+  ['ansi_5fpurple_14',['ANSI_PURPLE',['../ansi__colors_8h.html#a916adb7bc4dce02012a5b2abe91a8869',1,'ansi_colors.h']]],
+  ['ansi_5freset_15',['ANSI_RESET',['../ansi__colors_8h.html#af77a445894f2f750d43cf2182cd29e55',1,'ansi_colors.h']]],
+  ['ansi_5fyellow_16',['ANSI_YELLOW',['../ansi__colors_8h.html#af6e8b5c7b35e8bff4c581efd8019c798',1,'ansi_colors.h']]]
+];

@@ -1,0 +1,77 @@
+\doxysection{tree\+\_\+s Struct Reference}
+\hypertarget{structtree__s}{}\label{structtree__s}\index{tree\_s@{tree\_s}}
+
+
+A binary tree node representing part of a parsed command line.  
+
+
+
+
+{\ttfamily \#include $<$parsing\+\_\+struct.\+h$>$}
+
+
+
+Collaboration diagram for tree\+\_\+s\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{structtree__s__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structtree__s_ae7df8263935957a0482ad4006d6dfa2c}{command}}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structtree__s_a7e6330f8286a78857a8e701873df07d5}{file\+\_\+name}}
+\item 
+enum \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238}{arg\+\_\+type}} \mbox{\hyperlink{structtree__s_a248faec04c4dc2e8f9a14a9fb7a1949e}{argument\+\_\+type}}
+\item 
+struct \mbox{\hyperlink{structtree__s}{tree\+\_\+s}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structtree__s_a61c2d6d26718038a33745fee5c7cf1e0}{left}}
+\item 
+struct \mbox{\hyperlink{structtree__s}{tree\+\_\+s}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structtree__s_ace3dc18db900ffbb597ddf3974082678}{right}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A binary tree node representing part of a parsed command line. 
+
+Each node can represent a command, operator, or grouping. Nodes may contain child nodes representing sub-\/commands or operands. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structtree__s_a248faec04c4dc2e8f9a14a9fb7a1949e}\index{tree\_s@{tree\_s}!argument\_type@{argument\_type}}
+\index{argument\_type@{argument\_type}!tree\_s@{tree\_s}}
+\doxysubsubsection{\texorpdfstring{argument\_type}{argument\_type}}
+{\footnotesize\ttfamily \label{structtree__s_a248faec04c4dc2e8f9a14a9fb7a1949e} 
+enum \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238}{arg\+\_\+type}} tree\+\_\+s\+::argument\+\_\+type}
+
+Type of argument or operator \Hypertarget{structtree__s_ae7df8263935957a0482ad4006d6dfa2c}\index{tree\_s@{tree\_s}!command@{command}}
+\index{command@{command}!tree\_s@{tree\_s}}
+\doxysubsubsection{\texorpdfstring{command}{command}}
+{\footnotesize\ttfamily \label{structtree__s_ae7df8263935957a0482ad4006d6dfa2c} 
+char\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} tree\+\_\+s\+::command}
+
+Command and its arguments \Hypertarget{structtree__s_a7e6330f8286a78857a8e701873df07d5}\index{tree\_s@{tree\_s}!file\_name@{file\_name}}
+\index{file\_name@{file\_name}!tree\_s@{tree\_s}}
+\doxysubsubsection{\texorpdfstring{file\_name}{file\_name}}
+{\footnotesize\ttfamily \label{structtree__s_a7e6330f8286a78857a8e701873df07d5} 
+char\texorpdfstring{$\ast$}{*} tree\+\_\+s\+::file\+\_\+name}
+
+Associated file for redirections (if any) \Hypertarget{structtree__s_a61c2d6d26718038a33745fee5c7cf1e0}\index{tree\_s@{tree\_s}!left@{left}}
+\index{left@{left}!tree\_s@{tree\_s}}
+\doxysubsubsection{\texorpdfstring{left}{left}}
+{\footnotesize\ttfamily \label{structtree__s_a61c2d6d26718038a33745fee5c7cf1e0} 
+struct \mbox{\hyperlink{structtree__s}{tree\+\_\+s}}\texorpdfstring{$\ast$}{*} tree\+\_\+s\+::left}
+
+Left child node \Hypertarget{structtree__s_ace3dc18db900ffbb597ddf3974082678}\index{tree\_s@{tree\_s}!right@{right}}
+\index{right@{right}!tree\_s@{tree\_s}}
+\doxysubsubsection{\texorpdfstring{right}{right}}
+{\footnotesize\ttfamily \label{structtree__s_ace3dc18db900ffbb597ddf3974082678} 
+struct \mbox{\hyperlink{structtree__s}{tree\+\_\+s}}\texorpdfstring{$\ast$}{*} tree\+\_\+s\+::right}
+
+Right child node 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{parsing__struct_8h}{parsing\+\_\+struct.\+h}}\end{DoxyCompactItemize}

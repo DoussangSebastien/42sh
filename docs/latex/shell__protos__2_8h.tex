@@ -1,0 +1,740 @@
+\doxysection{shell\+\_\+protos\+\_\+2.\+h File Reference}
+\hypertarget{shell__protos__2_8h}{}\label{shell__protos__2_8h}\index{shell\_protos\_2.h@{shell\_protos\_2.h}}
+{\ttfamily \#include "{}struct.\+h"{}}\newline
+{\ttfamily \#include "{}set\+\_\+protos.\+h"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for shell\+\_\+protos\+\_\+2.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{shell__protos__2_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{shell__protos__2_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{shell__protos__2_8h_ae3e09bf097440a379ef55d7cfb4350e2}{free\+\_\+vars}} (\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}head)
+\begin{DoxyCompactList}\small\item\em Frees the list of shell variables. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos__2_8h_a942cefe10029a0bea377ca72ff96aa1c}{my\+\_\+set}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Implements the {\ttfamily set} built-\/in command. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos__2_8h_a4dd233f172f948d352734801b0023a9e}{my\+\_\+unset}} (\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Implements the {\ttfamily unset} built-\/in command. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{shell__protos__2_8h_a9c220ba1ad68bf5b03776249203efeac}{line\+\_\+parser}} (char \texorpdfstring{$\ast$}{*}line, \mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Parses a command line into individual arguments. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos__2_8h_ab3468da561335c5a14de73437410df4c}{excluded}} (char c, char const \texorpdfstring{$\ast$}{*}n)
+\begin{DoxyCompactList}\small\item\em Checks if a character is excluded from processing. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos__2_8h_abc6770606682af375b92e04ea54d3972}{count\+\_\+words}} (char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em Counts the number of words in a string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{shell__protos__2_8h_a15e4a298a8341b425554bf705163e9ec}{create\+\_\+node}} (int type, char \texorpdfstring{$\ast$}{*}fname, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}command)
+\begin{DoxyCompactList}\small\item\em Creates a new node for a syntax tree. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos__2_8h_af8280180034ec5c36ccd7b4f02c88a3b}{get\+\_\+arg\+\_\+type}} (char const \texorpdfstring{$\ast$}{*}argument)
+\begin{DoxyCompactList}\small\item\em Determines the type of an argument (e.\+g., argument, operator). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{shell__protos__2_8h_a178fa4d136b2aa8975c35e1227b49917}{split\+\_\+redir}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}command\+\_\+line, int start, int end)
+\begin{DoxyCompactList}\small\item\em Splits a command line into parts based on redirection symbols. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{shell__protos__2_8h_a3d4b435fb881f2b4aa3d8ce760eb4cdd}{load\+\_\+command}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}command, int start, int end)
+\begin{DoxyCompactList}\small\item\em Loads a command into a syntax tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{shell__protos__2_8h_a28c9cb6a5ff9b0261c31318ec1811ac4}{generate\+\_\+tree}} (char \texorpdfstring{$\ast$}{*}line, \mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Generates a syntax tree from a line of input. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos__2_8h_af25c24a447f8f5c37f390fdb74d70c5f}{execute\+\_\+tree}} (\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}root, \mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Executes commands in the syntax tree. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos__2_8h_aba936821a5b23d5be7cd1aeabed18a00}{exec\+\_\+command}} (pid\+\_\+t pid, \mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}args, char \texorpdfstring{$\ast$}{*}path, \mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Executes a single command. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos__2_8h_a379cee6b1362f9e27a32512dec807f91}{handle\+\_\+redirect}} (\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}tree, \mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Handles input/output redirection for commands. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{shell__protos__2_8h_a4605e6e4c7f24dd7e5f6dead89995647}{free\+\_\+tree}} (\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}tree)
+\begin{DoxyCompactList}\small\item\em Frees a syntax tree structure. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos__2_8h_a96fadbe43b1981cc437d636a9357a4bb}{binary\+\_\+error\+\_\+parser}} (\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}tree)
+\begin{DoxyCompactList}\small\item\em Parses and displays errors related to binary execution. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos__2_8h_ab5ab0ac9a9b3003f0b456f08f5bd30fe}{display\+\_\+error}} (char const \texorpdfstring{$\ast$}{*}error\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Displays an error message. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos__2_8h_a6c8def121385f7b8068ca40eaf7dec24}{check\+\_\+right\+\_\+redir}} (\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}tree)
+\begin{DoxyCompactList}\small\item\em Checks the right side of a redirection for validity. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos__2_8h_aec99103317fbb76f524fa82d7ccc75e9}{check\+\_\+left\+\_\+redir}} (\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}tree)
+\begin{DoxyCompactList}\small\item\em Checks the left side of a redirection for validity. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos__2_8h_a3a0e527e69d3d306dd71b0006eead474}{check\+\_\+pipe}} (\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}tree)
+\begin{DoxyCompactList}\small\item\em Checks if a pipe exists in the command line. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos__2_8h_ae252d1157a9010cea89ddc9ae52cb789}{check\+\_\+linear\+\_\+args}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}command)
+\begin{DoxyCompactList}\small\item\em Validates linear arguments in a command. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos__2_8h_a673330451df3402fd4512358e67858be}{compare\+\_\+aliases}} (\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Compares aliases in the shell\textquotesingle{}s context. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos__2_8h_af2441adf9e5370b578d02abf3863e1cc}{check\+\_\+parenthesis}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}cmd\+\_\+line)
+\begin{DoxyCompactList}\small\item\em Checks for matching parentheses in the command. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{shell__protos__2_8h_a32b77847d3e55c0309c2eccb086e0d0a}{execute\+\_\+pipe}} (\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}tree, \mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Executes a command within a pipe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{shell__protos__2_8h_a7f768b0c896e2a34504debbb8b4c1c75}{split\+\_\+pipe}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}command\+\_\+line, int start, int end)
+\begin{DoxyCompactList}\small\item\em Splits a command line into parts at pipe symbols. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{shell__protos__2_8h_a62664bbde9bb1d73ab00a07007aa5cbf}{split\+\_\+semicolon}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}command\+\_\+line, int start, int end)
+\begin{DoxyCompactList}\small\item\em Splits a command line into parts at semicolons. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{shell__protos__2_8h_a57bf42e566d92a8efde7daed6cda7616}{split\+\_\+open\+\_\+p}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}command\+\_\+line, int start, int end)
+\begin{DoxyCompactList}\small\item\em Splits a command line into parts at open parentheses. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{shell__protos__2_8h_a56ac127a4080aaf3f3318ab07bcd215a}{execute\+\_\+subshell}} (\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}root, \mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Executes a command in a subshell. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{shell__protos__2_8h_a65b911a3a42c78a5a484b61d2199f764}{print\+\_\+tree}} (\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}root)
+\begin{DoxyCompactList}\small\item\em Prints the structure of a syntax tree. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{shell__protos__2_8h_a3a1285415a3e99d971f0f2773fd3a3e8}{interpret\+\_\+command}} (\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Interprets and executes the parsed command. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{shell__protos__2_8h_acb99be969a83b88957b842df172b62d2}{prompt}} (void)
+\begin{DoxyCompactList}\small\item\em Displays the shell prompt. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{shell__protos__2_8h_a43fc7f3895b0243d669604d68d0f5de8}{build\+\_\+command}} (char \texorpdfstring{$\ast$}{*}argument, \mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Builds a command from an argument. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{shell__protos__2_8h_a96fadbe43b1981cc437d636a9357a4bb}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!binary\_error\_parser@{binary\_error\_parser}}
+\index{binary\_error\_parser@{binary\_error\_parser}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{binary\_error\_parser()}{binary\_error\_parser()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a96fadbe43b1981cc437d636a9357a4bb} 
+int binary\+\_\+error\+\_\+parser (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{tree}{}\end{DoxyParamCaption})}
+
+
+
+Parses and displays errors related to binary execution. 
+
+Provides error messages when binary commands fail to execute.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & The tree node where the error occurred. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero on failure. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_a43fc7f3895b0243d669604d68d0f5de8}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!build\_command@{build\_command}}
+\index{build\_command@{build\_command}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{build\_command()}{build\_command()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a43fc7f3895b0243d669604d68d0f5de8} 
+char \texorpdfstring{$\ast$}{*} build\+\_\+command (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{argument}{, }\item[{\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Builds a command from an argument. 
+
+Combines an argument into a valid command for execution.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argument} & The argument to build. \\
+\hline
+{\em data} & Pointer to shell data context. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A newly constructed command string. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_aec99103317fbb76f524fa82d7ccc75e9}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!check\_left\_redir@{check\_left\_redir}}
+\index{check\_left\_redir@{check\_left\_redir}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{check\_left\_redir()}{check\_left\_redir()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_aec99103317fbb76f524fa82d7ccc75e9} 
+int check\+\_\+left\+\_\+redir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{tree}{}\end{DoxyParamCaption})}
+
+
+
+Checks the left side of a redirection for validity. 
+
+Validates the syntax and conditions for left redirection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & The tree node representing the redirection. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if valid, 0 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_ae252d1157a9010cea89ddc9ae52cb789}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!check\_linear\_args@{check\_linear\_args}}
+\index{check\_linear\_args@{check\_linear\_args}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{check\_linear\_args()}{check\_linear\_args()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_ae252d1157a9010cea89ddc9ae52cb789} 
+int check\+\_\+linear\+\_\+args (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{command}{}\end{DoxyParamCaption})}
+
+
+
+Validates linear arguments in a command. 
+
+Ensures that arguments are in a valid format and syntax.
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The command arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if valid, 0 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_af2441adf9e5370b578d02abf3863e1cc}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!check\_parenthesis@{check\_parenthesis}}
+\index{check\_parenthesis@{check\_parenthesis}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{check\_parenthesis()}{check\_parenthesis()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_af2441adf9e5370b578d02abf3863e1cc} 
+int check\+\_\+parenthesis (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{cmd\+\_\+line}{}\end{DoxyParamCaption})}
+
+
+
+Checks for matching parentheses in the command. 
+
+Ensures proper syntax of parentheses for subshells.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd\+\_\+line} & The command line to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if parentheses are valid, 0 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_a3a0e527e69d3d306dd71b0006eead474}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!check\_pipe@{check\_pipe}}
+\index{check\_pipe@{check\_pipe}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{check\_pipe()}{check\_pipe()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a3a0e527e69d3d306dd71b0006eead474} 
+int check\+\_\+pipe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{tree}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a pipe exists in the command line. 
+
+Validates the use of pipes in the command.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & The tree node representing the command. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if pipe is present, 0 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_a6c8def121385f7b8068ca40eaf7dec24}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!check\_right\_redir@{check\_right\_redir}}
+\index{check\_right\_redir@{check\_right\_redir}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{check\_right\_redir()}{check\_right\_redir()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a6c8def121385f7b8068ca40eaf7dec24} 
+int check\+\_\+right\+\_\+redir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{tree}{}\end{DoxyParamCaption})}
+
+
+
+Checks the right side of a redirection for validity. 
+
+Validates the syntax and conditions for right redirection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & The tree node representing the redirection. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if valid, 0 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_a673330451df3402fd4512358e67858be}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!compare\_aliases@{compare\_aliases}}
+\index{compare\_aliases@{compare\_aliases}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{compare\_aliases()}{compare\_aliases()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a673330451df3402fd4512358e67858be} 
+int compare\+\_\+aliases (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Compares aliases in the shell\textquotesingle{}s context. 
+
+Resolves and compares alias definitions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to shell data context. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if an alias is found, 0 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_abc6770606682af375b92e04ea54d3972}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!count\_words@{count\_words}}
+\index{count\_words@{count\_words}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{count\_words()}{count\_words()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_abc6770606682af375b92e04ea54d3972} 
+int count\+\_\+words (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})}
+
+
+
+Counts the number of words in a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The input string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of words in the string. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_a15e4a298a8341b425554bf705163e9ec}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!create\_node@{create\_node}}
+\index{create\_node@{create\_node}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{create\_node()}{create\_node()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a15e4a298a8341b425554bf705163e9ec} 
+\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} create\+\_\+node (\begin{DoxyParamCaption}\item[{int}]{type}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{fname}{, }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{command}{}\end{DoxyParamCaption})}
+
+
+
+Creates a new node for a syntax tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Type of the node (e.\+g., command, redirection). \\
+\hline
+{\em fname} & Name of the file (if any) associated with the node. \\
+\hline
+{\em command} & List of command arguments for the node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the newly created tree node. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_ab5ab0ac9a9b3003f0b456f08f5bd30fe}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!display\_error@{display\_error}}
+\index{display\_error@{display\_error}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{display\_error()}{display\_error()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_ab5ab0ac9a9b3003f0b456f08f5bd30fe} 
+int display\+\_\+error (\begin{DoxyParamCaption}\item[{char const \texorpdfstring{$\ast$}{*}}]{error\+\_\+message}{}\end{DoxyParamCaption})}
+
+
+
+Displays an error message. 
+
+Prints an error message to the standard error.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+\_\+message} & The error message to display. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Always returns 0. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_ab3468da561335c5a14de73437410df4c}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!excluded@{excluded}}
+\index{excluded@{excluded}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{excluded()}{excluded()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_ab3468da561335c5a14de73437410df4c} 
+int excluded (\begin{DoxyParamCaption}\item[{char}]{c}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a character is excluded from processing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Character to check. \\
+\hline
+{\em n} & String of excluded characters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the character is excluded, 0 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_aba936821a5b23d5be7cd1aeabed18a00}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!exec\_command@{exec\_command}}
+\index{exec\_command@{exec\_command}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{exec\_command()}{exec\_command()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_aba936821a5b23d5be7cd1aeabed18a00} 
+int exec\+\_\+command (\begin{DoxyParamCaption}\item[{pid\+\_\+t}]{pid}{, }\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{path}{, }\item[{\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Executes a single command. 
+
+Executes a command in a child process, waiting for it to complete.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pid} & Process ID of the command to execute. \\
+\hline
+{\em args} & Argument context for the command. \\
+\hline
+{\em path} & Path to the command binary. \\
+\hline
+{\em data} & Pointer to shell data context. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Execution result (0 for success, non-\/zero for error). 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_a32b77847d3e55c0309c2eccb086e0d0a}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!execute\_pipe@{execute\_pipe}}
+\index{execute\_pipe@{execute\_pipe}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{execute\_pipe()}{execute\_pipe()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a32b77847d3e55c0309c2eccb086e0d0a} 
+void execute\+\_\+pipe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{tree}{, }\item[{\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Executes a command within a pipe. 
+
+Handles the creation and execution of processes within a pipe.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & The tree node representing the command to execute. \\
+\hline
+{\em data} & Pointer to shell data context. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{shell__protos__2_8h_a56ac127a4080aaf3f3318ab07bcd215a}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!execute\_subshell@{execute\_subshell}}
+\index{execute\_subshell@{execute\_subshell}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{execute\_subshell()}{execute\_subshell()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a56ac127a4080aaf3f3318ab07bcd215a} 
+int execute\+\_\+subshell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{root}{, }\item[{\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Executes a command in a subshell. 
+
+Creates a child process to execute a command in a subshell.
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & Root of the tree node representing the command. \\
+\hline
+{\em data} & Pointer to shell data context. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Execution result (0 for success, non-\/zero for error). 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_af25c24a447f8f5c37f390fdb74d70c5f}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!execute\_tree@{execute\_tree}}
+\index{execute\_tree@{execute\_tree}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{execute\_tree()}{execute\_tree()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_af25c24a447f8f5c37f390fdb74d70c5f} 
+int execute\+\_\+tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{root}{, }\item[{\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Executes commands in the syntax tree. 
+
+Traverses the tree and executes each command based on its node type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & Root node of the syntax tree. \\
+\hline
+{\em data} & Pointer to shell data context. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Execution result (0 for success, non-\/zero for error). 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_a4605e6e4c7f24dd7e5f6dead89995647}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!free\_tree@{free\_tree}}
+\index{free\_tree@{free\_tree}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{free\_tree()}{free\_tree()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a4605e6e4c7f24dd7e5f6dead89995647} 
+void free\+\_\+tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{tree}{}\end{DoxyParamCaption})}
+
+
+
+Frees a syntax tree structure. 
+
+Recursively frees all nodes of the tree.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & Root of the tree to free. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{shell__protos__2_8h_ae3e09bf097440a379ef55d7cfb4350e2}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!free\_vars@{free\_vars}}
+\index{free\_vars@{free\_vars}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{free\_vars()}{free\_vars()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_ae3e09bf097440a379ef55d7cfb4350e2} 
+void free\+\_\+vars (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{set__struct_8h_a8097bb9bfe269fb3051a3edd805f6e2b}{var\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{head}{}\end{DoxyParamCaption})}
+
+
+
+Frees the list of shell variables. 
+
+Iterates through the linked list and frees all the memory associated with the variables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em head} & Pointer to the first variable in the list. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{shell__protos__2_8h_a28c9cb6a5ff9b0261c31318ec1811ac4}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!generate\_tree@{generate\_tree}}
+\index{generate\_tree@{generate\_tree}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{generate\_tree()}{generate\_tree()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a28c9cb6a5ff9b0261c31318ec1811ac4} 
+\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} generate\+\_\+tree (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{line}{, }\item[{\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Generates a syntax tree from a line of input. 
+
+Parses the input and creates a tree structure representing the syntax.
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & The input command line. \\
+\hline
+{\em data} & Pointer to shell data context. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the root of the syntax tree. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_af8280180034ec5c36ccd7b4f02c88a3b}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!get\_arg\_type@{get\_arg\_type}}
+\index{get\_arg\_type@{get\_arg\_type}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{get\_arg\_type()}{get\_arg\_type()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_af8280180034ec5c36ccd7b4f02c88a3b} 
+int get\+\_\+arg\+\_\+type (\begin{DoxyParamCaption}\item[{char const \texorpdfstring{$\ast$}{*}}]{argument}{}\end{DoxyParamCaption})}
+
+
+
+Determines the type of an argument (e.\+g., argument, operator). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argument} & The argument string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The argument type as an integer. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_a379cee6b1362f9e27a32512dec807f91}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!handle\_redirect@{handle\_redirect}}
+\index{handle\_redirect@{handle\_redirect}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{handle\_redirect()}{handle\_redirect()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a379cee6b1362f9e27a32512dec807f91} 
+int handle\+\_\+redirect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{tree}{, }\item[{\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Handles input/output redirection for commands. 
+
+Sets up file descriptors for redirection operations.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & The tree node representing the command. \\
+\hline
+{\em data} & Pointer to shell data context. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero on failure. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_a3a1285415a3e99d971f0f2773fd3a3e8}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!interpret\_command@{interpret\_command}}
+\index{interpret\_command@{interpret\_command}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{interpret\_command()}{interpret\_command()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a3a1285415a3e99d971f0f2773fd3a3e8} 
+void interpret\+\_\+command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Interprets and executes the parsed command. 
+
+Executes the necessary action based on the command parsed in the tree.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to shell data context. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{shell__protos__2_8h_a9c220ba1ad68bf5b03776249203efeac}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!line\_parser@{line\_parser}}
+\index{line\_parser@{line\_parser}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{line\_parser()}{line\_parser()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a9c220ba1ad68bf5b03776249203efeac} 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} line\+\_\+parser (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{line}{, }\item[{\mbox{\hyperlink{struct_8h_abc127153841754ee8b7845321721d7e7}{data\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Parses a command line into individual arguments. 
+
+Splits a command line string into its components, handling quotes and special characters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & The input command line string. \\
+\hline
+{\em data} & Pointer to shell data context. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of argument strings. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_a3d4b435fb881f2b4aa3d8ce760eb4cdd}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!load\_command@{load\_command}}
+\index{load\_command@{load\_command}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{load\_command()}{load\_command()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a3d4b435fb881f2b4aa3d8ce760eb4cdd} 
+\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} load\+\_\+command (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{command}{, }\item[{int}]{start}{, }\item[{int}]{end}{}\end{DoxyParamCaption})}
+
+
+
+Loads a command into a syntax tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & Command arguments to be added to the tree. \\
+\hline
+{\em start} & Start index of the command. \\
+\hline
+{\em end} & End index of the command. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the tree node representing the command. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_a942cefe10029a0bea377ca72ff96aa1c}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!my\_set@{my\_set}}
+\index{my\_set@{my\_set}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{my\_set()}{my\_set()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a942cefe10029a0bea377ca72ff96aa1c} 
+int my\+\_\+set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Implements the {\ttfamily set} built-\/in command. 
+
+Sets or prints environment variables or shell variables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Argument context for the command. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, -\/1 on error. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_a4dd233f172f948d352734801b0023a9e}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!my\_unset@{my\_unset}}
+\index{my\_unset@{my\_unset}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{my\_unset()}{my\_unset()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a4dd233f172f948d352734801b0023a9e} 
+int my\+\_\+unset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_8h_a37c036309dc3cde4be5b5a119f536039}{args\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Implements the {\ttfamily unset} built-\/in command. 
+
+Unsets a specified environment or shell variable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Argument context for the command. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, -\/1 on error. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_a65b911a3a42c78a5a484b61d2199f764}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!print\_tree@{print\_tree}}
+\index{print\_tree@{print\_tree}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{print\_tree()}{print\_tree()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a65b911a3a42c78a5a484b61d2199f764} 
+void print\+\_\+tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{root}{}\end{DoxyParamCaption})}
+
+
+
+Prints the structure of a syntax tree. 
+
+Displays the tree structure of parsed commands for debugging purposes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & Root node of the syntax tree. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{shell__protos__2_8h_acb99be969a83b88957b842df172b62d2}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!prompt@{prompt}}
+\index{prompt@{prompt}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{prompt()}{prompt()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_acb99be969a83b88957b842df172b62d2} 
+void prompt (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the shell prompt. 
+
+Displays a prompt and waits for user input. \Hypertarget{shell__protos__2_8h_a57bf42e566d92a8efde7daed6cda7616}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!split\_open\_p@{split\_open\_p}}
+\index{split\_open\_p@{split\_open\_p}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{split\_open\_p()}{split\_open\_p()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a57bf42e566d92a8efde7daed6cda7616} 
+\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} split\+\_\+open\+\_\+p (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{command\+\_\+line}{, }\item[{int}]{start}{, }\item[{int}]{end}{}\end{DoxyParamCaption})}
+
+
+
+Splits a command line into parts at open parentheses. 
+
+Divides the command line at open parentheses ({\ttfamily (}), creating subcommands.
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+\_\+line} & The command line to split. \\
+\hline
+{\em start} & Starting index of the command line. \\
+\hline
+{\em end} & Ending index of the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the root of the new syntax tree. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_a7f768b0c896e2a34504debbb8b4c1c75}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!split\_pipe@{split\_pipe}}
+\index{split\_pipe@{split\_pipe}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{split\_pipe()}{split\_pipe()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a7f768b0c896e2a34504debbb8b4c1c75} 
+\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} split\+\_\+pipe (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{command\+\_\+line}{, }\item[{int}]{start}{, }\item[{int}]{end}{}\end{DoxyParamCaption})}
+
+
+
+Splits a command line into parts at pipe symbols. 
+
+Divides the command line at pipe symbols ({\ttfamily \texorpdfstring{$\vert$}{|}}), creating subcommands.
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+\_\+line} & The command line to split. \\
+\hline
+{\em start} & Starting index of the command line. \\
+\hline
+{\em end} & Ending index of the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the root of the new syntax tree. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_a178fa4d136b2aa8975c35e1227b49917}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!split\_redir@{split\_redir}}
+\index{split\_redir@{split\_redir}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{split\_redir()}{split\_redir()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a178fa4d136b2aa8975c35e1227b49917} 
+\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} split\+\_\+redir (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{command\+\_\+line}{, }\item[{int}]{start}{, }\item[{int}]{end}{}\end{DoxyParamCaption})}
+
+
+
+Splits a command line into parts based on redirection symbols. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+\_\+line} & The command line to split. \\
+\hline
+{\em start} & Start index of the line. \\
+\hline
+{\em end} & End index of the line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A tree node representing the command and its redirections. 
+\end{DoxyReturn}
+\Hypertarget{shell__protos__2_8h_a62664bbde9bb1d73ab00a07007aa5cbf}\index{shell\_protos\_2.h@{shell\_protos\_2.h}!split\_semicolon@{split\_semicolon}}
+\index{split\_semicolon@{split\_semicolon}!shell\_protos\_2.h@{shell\_protos\_2.h}}
+\doxysubsubsection{\texorpdfstring{split\_semicolon()}{split\_semicolon()}}
+{\footnotesize\ttfamily \label{shell__protos__2_8h_a62664bbde9bb1d73ab00a07007aa5cbf} 
+\mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}} \texorpdfstring{$\ast$}{*} split\+\_\+semicolon (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{command\+\_\+line}{, }\item[{int}]{start}{, }\item[{int}]{end}{}\end{DoxyParamCaption})}
+
+
+
+Splits a command line into parts at semicolons. 
+
+Divides the command line at semicolons ({\ttfamily ;}), creating subcommands.
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+\_\+line} & The command line to split. \\
+\hline
+{\em start} & Starting index of the command line. \\
+\hline
+{\em end} & Ending index of the command line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the root of the new syntax tree. 
+\end{DoxyReturn}

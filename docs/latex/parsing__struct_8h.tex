@@ -1,0 +1,123 @@
+\doxysection{parsing\+\_\+struct.\+h File Reference}
+\hypertarget{parsing__struct_8h}{}\label{parsing__struct_8h}\index{parsing\_struct.h@{parsing\_struct.h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{parsing__struct_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtree__s}{tree\+\_\+s}}
+\begin{DoxyCompactList}\small\item\em A binary tree node representing part of a parsed command line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structtree__s}{tree\+\_\+s}} \mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238}{arg\+\_\+type}} \{ \newline
+\mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a9bc832fa28809fb974f6ce5bb0cc7117}{PIPE}}
+, \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a74c33ffe88ba7ede215485f180bf3eec}{PIPE2}}
+, \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a506a3096ffca9980752e4fe3b5456fa1}{REDIR\+\_\+R}}
+, \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a5936f7854ecb0774cb8145589911856d}{REDIR\+\_\+\+RR}}
+, \newline
+\mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a9f35ec4aaeaccf4b3d043dfe6c4ed094}{REDIR\+\_\+L}}
+, \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a02aeee99650cba9bbd7adf2d9499dbf5}{REDIR\+\_\+\+LL}}
+, \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a1272bd41379fcfdfa4206f9fc0b7d588}{SEMI\+\_\+\+COLON}}
+, \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a1cb3492b94a37b0728ee34d5dc3d08f2}{OPEN\+\_\+P}}
+, \newline
+\mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a9ea3f167d8265e0e3a6e7f6ed347b785}{CLOSE\+\_\+P}}
+, \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a865555c9f2e0458a7078486aa1b3254f}{AND}}
+, \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a8abd3fd7065b2c9ea58941901837762e}{AND2}}
+, \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238aa08ab92d27d76b8b77a5f4d551ced4a2}{ARG}}
+, \newline
+\mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a5b880c0d9ff6a554ee59a21b93be6b54}{SUBSHELL}}
+, \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238aef2863a469df3ea6871d640e3669a2f2}{INVALID}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration of token types used in command parsing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}\index{parsing\_struct.h@{parsing\_struct.h}!tree\_t@{tree\_t}}
+\index{tree\_t@{tree\_t}!parsing\_struct.h@{parsing\_struct.h}}
+\doxysubsubsection{\texorpdfstring{tree\_t}{tree\_t}}
+{\footnotesize\ttfamily \label{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987} 
+typedef struct \mbox{\hyperlink{structtree__s}{tree\+\_\+s}} \mbox{\hyperlink{parsing__struct_8h_a3c0cd108f775e50de6cd00a17f40e987}{tree\+\_\+t}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238}\index{parsing\_struct.h@{parsing\_struct.h}!arg\_type@{arg\_type}}
+\index{arg\_type@{arg\_type}!parsing\_struct.h@{parsing\_struct.h}}
+\doxysubsubsection{\texorpdfstring{arg\_type}{arg\_type}}
+{\footnotesize\ttfamily \label{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238} 
+enum \mbox{\hyperlink{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238}{arg\+\_\+type}}}
+
+
+
+Enumeration of token types used in command parsing. 
+
+Represents different kinds of shell syntax elements, such as redirections, pipes, logical operators, and parentheses. \begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PIPE@{PIPE}!parsing\_struct.h@{parsing\_struct.h}}\index{parsing\_struct.h@{parsing\_struct.h}!PIPE@{PIPE}}}\Hypertarget{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a9bc832fa28809fb974f6ce5bb0cc7117}\label{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a9bc832fa28809fb974f6ce5bb0cc7117} 
+PIPE&Single pipe \textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PIPE2@{PIPE2}!parsing\_struct.h@{parsing\_struct.h}}\index{parsing\_struct.h@{parsing\_struct.h}!PIPE2@{PIPE2}}}\Hypertarget{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a74c33ffe88ba7ede215485f180bf3eec}\label{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a74c33ffe88ba7ede215485f180bf3eec} 
+PIPE2&Double pipe \textquotesingle{}\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}\textquotesingle{} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REDIR\_R@{REDIR\_R}!parsing\_struct.h@{parsing\_struct.h}}\index{parsing\_struct.h@{parsing\_struct.h}!REDIR\_R@{REDIR\_R}}}\Hypertarget{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a506a3096ffca9980752e4fe3b5456fa1}\label{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a506a3096ffca9980752e4fe3b5456fa1} 
+REDIR\+\_\+R&Output redirection \textquotesingle{}\texorpdfstring{$>$}{>}\textquotesingle{} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REDIR\_RR@{REDIR\_RR}!parsing\_struct.h@{parsing\_struct.h}}\index{parsing\_struct.h@{parsing\_struct.h}!REDIR\_RR@{REDIR\_RR}}}\Hypertarget{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a5936f7854ecb0774cb8145589911856d}\label{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a5936f7854ecb0774cb8145589911856d} 
+REDIR\+\_\+\+RR&Output append redirection \textquotesingle{}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\textquotesingle{} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REDIR\_L@{REDIR\_L}!parsing\_struct.h@{parsing\_struct.h}}\index{parsing\_struct.h@{parsing\_struct.h}!REDIR\_L@{REDIR\_L}}}\Hypertarget{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a9f35ec4aaeaccf4b3d043dfe6c4ed094}\label{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a9f35ec4aaeaccf4b3d043dfe6c4ed094} 
+REDIR\+\_\+L&Input redirection \textquotesingle{}\texorpdfstring{$<$}{<}\textquotesingle{} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REDIR\_LL@{REDIR\_LL}!parsing\_struct.h@{parsing\_struct.h}}\index{parsing\_struct.h@{parsing\_struct.h}!REDIR\_LL@{REDIR\_LL}}}\Hypertarget{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a02aeee99650cba9bbd7adf2d9499dbf5}\label{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a02aeee99650cba9bbd7adf2d9499dbf5} 
+REDIR\+\_\+\+LL&Here-\/document input \textquotesingle{}\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}\textquotesingle{} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SEMI\_COLON@{SEMI\_COLON}!parsing\_struct.h@{parsing\_struct.h}}\index{parsing\_struct.h@{parsing\_struct.h}!SEMI\_COLON@{SEMI\_COLON}}}\Hypertarget{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a1272bd41379fcfdfa4206f9fc0b7d588}\label{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a1272bd41379fcfdfa4206f9fc0b7d588} 
+SEMI\+\_\+\+COLON&Command separator \textquotesingle{};\textquotesingle{} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OPEN\_P@{OPEN\_P}!parsing\_struct.h@{parsing\_struct.h}}\index{parsing\_struct.h@{parsing\_struct.h}!OPEN\_P@{OPEN\_P}}}\Hypertarget{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a1cb3492b94a37b0728ee34d5dc3d08f2}\label{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a1cb3492b94a37b0728ee34d5dc3d08f2} 
+OPEN\+\_\+P&Open parenthesis \textquotesingle{}(\textquotesingle{} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CLOSE\_P@{CLOSE\_P}!parsing\_struct.h@{parsing\_struct.h}}\index{parsing\_struct.h@{parsing\_struct.h}!CLOSE\_P@{CLOSE\_P}}}\Hypertarget{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a9ea3f167d8265e0e3a6e7f6ed347b785}\label{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a9ea3f167d8265e0e3a6e7f6ed347b785} 
+CLOSE\+\_\+P&Close parenthesis \textquotesingle{})\textquotesingle{} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AND@{AND}!parsing\_struct.h@{parsing\_struct.h}}\index{parsing\_struct.h@{parsing\_struct.h}!AND@{AND}}}\Hypertarget{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a865555c9f2e0458a7078486aa1b3254f}\label{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a865555c9f2e0458a7078486aa1b3254f} 
+AND&Logical AND \textquotesingle{}\&\textquotesingle{} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AND2@{AND2}!parsing\_struct.h@{parsing\_struct.h}}\index{parsing\_struct.h@{parsing\_struct.h}!AND2@{AND2}}}\Hypertarget{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a8abd3fd7065b2c9ea58941901837762e}\label{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a8abd3fd7065b2c9ea58941901837762e} 
+AND2&Logical double AND \textquotesingle{}\&\&\textquotesingle{} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARG@{ARG}!parsing\_struct.h@{parsing\_struct.h}}\index{parsing\_struct.h@{parsing\_struct.h}!ARG@{ARG}}}\Hypertarget{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238aa08ab92d27d76b8b77a5f4d551ced4a2}\label{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238aa08ab92d27d76b8b77a5f4d551ced4a2} 
+ARG&Regular argument or command word \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUBSHELL@{SUBSHELL}!parsing\_struct.h@{parsing\_struct.h}}\index{parsing\_struct.h@{parsing\_struct.h}!SUBSHELL@{SUBSHELL}}}\Hypertarget{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a5b880c0d9ff6a554ee59a21b93be6b54}\label{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238a5b880c0d9ff6a554ee59a21b93be6b54} 
+SUBSHELL&Subshell command block \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INVALID@{INVALID}!parsing\_struct.h@{parsing\_struct.h}}\index{parsing\_struct.h@{parsing\_struct.h}!INVALID@{INVALID}}}\Hypertarget{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238aef2863a469df3ea6871d640e3669a2f2}\label{parsing__struct_8h_a48993a78446fa89222cc606e1d91c238aef2863a469df3ea6871d640e3669a2f2} 
+INVALID&Invalid or unrecognized token \\
+\hline
+
+\end{DoxyEnumFields}
