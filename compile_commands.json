@@ -1,0 +1,1192 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/main.o",
+      "SRC/main.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/main.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/shell.o",
+      "SRC/shell.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/shell.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/shell.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/create_path.o",
+      "SRC/create_path.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/create_path.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/create_path.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Inits/init_function_list.o",
+      "SRC/Inits/init_function_list.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Inits/init_function_list.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Inits/init_function_list.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Inits/init_data.o",
+      "SRC/Inits/init_data.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Inits/init_data.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Inits/init_data.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Inits/init_environment.o",
+      "SRC/Inits/init_environment.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Inits/init_environment.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Inits/init_environment.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/execute_builtins.o",
+      "SRC/execute_builtins.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/execute_builtins.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/execute_builtins.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/analyze_input.o",
+      "SRC/analyze_input.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/analyze_input.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/analyze_input.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/check_stdin.o",
+      "SRC/check_stdin.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/check_stdin.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/check_stdin.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/build_envp.o",
+      "SRC/build_envp.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/build_envp.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/build_envp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/my_getenv.o",
+      "SRC/my_getenv.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/my_getenv.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/my_getenv.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/executable_condition.o",
+      "SRC/executable_condition.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/executable_condition.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/executable_condition.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/line_editing/free_line.o",
+      "SRC/line_editing/free_line.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/line_editing/free_line.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/line_editing/free_line.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/line_editing/handle_line.o",
+      "SRC/line_editing/handle_line.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/line_editing/handle_line.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/line_editing/handle_line.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/line_editing/init_line.o",
+      "SRC/line_editing/init_line.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/line_editing/init_line.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/line_editing/init_line.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/line_editing/keyboard/basic_char.o",
+      "SRC/line_editing/keyboard/basic_char.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/line_editing/keyboard/basic_char.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/line_editing/keyboard/basic_char.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/line_editing/keyboard/ctrl.o",
+      "SRC/line_editing/keyboard/ctrl.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/line_editing/keyboard/ctrl.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/line_editing/keyboard/ctrl.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/line_editing/keyboard/directions.o",
+      "SRC/line_editing/keyboard/directions.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/line_editing/keyboard/directions.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/line_editing/keyboard/directions.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/line_editing/keyboard/handle_keyboard.o",
+      "SRC/line_editing/keyboard/handle_keyboard.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/line_editing/keyboard/handle_keyboard.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/line_editing/keyboard/handle_keyboard.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/line_editing/keyboard/insert_char.o",
+      "SRC/line_editing/keyboard/insert_char.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/line_editing/keyboard/insert_char.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/line_editing/keyboard/insert_char.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/line_editing/keyboard/remove_char.o",
+      "SRC/line_editing/keyboard/remove_char.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/line_editing/keyboard/remove_char.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/line_editing/keyboard/remove_char.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/line_editing/keyboard/get_n_cmd.o",
+      "SRC/line_editing/keyboard/get_n_cmd.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/line_editing/keyboard/get_n_cmd.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/line_editing/keyboard/get_n_cmd.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/line_editing/keyboard/arrows.o",
+      "SRC/line_editing/keyboard/arrows.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/line_editing/keyboard/arrows.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/line_editing/keyboard/arrows.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/line_editing/autocomplete/auto.o",
+      "SRC/line_editing/autocomplete/auto.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/line_editing/autocomplete/auto.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/line_editing/autocomplete/auto.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/line_editing/autocomplete/strncmp_case_i.o",
+      "SRC/line_editing/autocomplete/strncmp_case_i.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/line_editing/autocomplete/strncmp_case_i.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/line_editing/autocomplete/strncmp_case_i.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/line_editing/autocomplete/get_word.o",
+      "SRC/line_editing/autocomplete/get_word.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/line_editing/autocomplete/get_word.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/line_editing/autocomplete/get_word.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/line_editing/autocomplete/get_dir.o",
+      "SRC/line_editing/autocomplete/get_dir.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/line_editing/autocomplete/get_dir.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/line_editing/autocomplete/get_dir.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/line_editing/autocomplete/find_matches.o",
+      "SRC/line_editing/autocomplete/find_matches.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/line_editing/autocomplete/find_matches.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/line_editing/autocomplete/find_matches.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/builtins/CD/cd_function.o",
+      "SRC/builtins/CD/cd_function.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/builtins/CD/cd_function.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/builtins/CD/cd_function.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/builtins/CD/old_pwd.o",
+      "SRC/builtins/CD/old_pwd.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/builtins/CD/old_pwd.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/builtins/CD/old_pwd.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/builtins/CD/change_env_dir.o",
+      "SRC/builtins/CD/change_env_dir.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/builtins/CD/change_env_dir.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/builtins/CD/change_env_dir.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/builtins/CD/display_cd_error.o",
+      "SRC/builtins/CD/display_cd_error.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/builtins/CD/display_cd_error.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/builtins/CD/display_cd_error.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/builtins/Exit/exit_function.o",
+      "SRC/builtins/Exit/exit_function.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/builtins/Exit/exit_function.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/builtins/Exit/exit_function.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/builtins/Alias/alias_function.o",
+      "SRC/builtins/Alias/alias_function.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/builtins/Alias/alias_function.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/builtins/Alias/alias_function.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/builtins/Alias/compare_aliases.o",
+      "SRC/builtins/Alias/compare_aliases.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/builtins/Alias/compare_aliases.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/builtins/Alias/compare_aliases.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/builtins/Setenv/setenv_function.o",
+      "SRC/builtins/Setenv/setenv_function.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/builtins/Setenv/setenv_function.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/builtins/Setenv/setenv_function.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/builtins/Env/env_function.o",
+      "SRC/builtins/Env/env_function.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/builtins/Env/env_function.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/builtins/Env/env_function.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/builtins/Unsetenv/unsetenv_function.o",
+      "SRC/builtins/Unsetenv/unsetenv_function.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/builtins/Unsetenv/unsetenv_function.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/builtins/Unsetenv/unsetenv_function.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/builtins/rev_list.o",
+      "SRC/builtins/rev_list.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/builtins/rev_list.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/builtins/rev_list.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/line_parser.o",
+      "SRC/Parser/line_parser.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/line_parser.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/line_parser.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/interpret_command.o",
+      "SRC/Parser/interpret_command.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/interpret_command.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/interpret_command.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/count_word.o",
+      "SRC/Parser/count_word.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/count_word.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/count_word.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/get_arg_type.o",
+      "SRC/Parser/get_arg_type.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/get_arg_type.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/get_arg_type.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/exec_tree.o",
+      "SRC/Parser/exec_tree.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/exec_tree.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/exec_tree.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/exec_command.o",
+      "SRC/Parser/exec_command.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/exec_command.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/exec_command.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/execute_pipe.o",
+      "SRC/Parser/execute_pipe.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/execute_pipe.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/execute_pipe.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/exec_subshell.o",
+      "SRC/Parser/exec_subshell.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/exec_subshell.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/exec_subshell.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/handle_redirect.o",
+      "SRC/Parser/handle_redirect.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/handle_redirect.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/handle_redirect.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Tree/create_node.o",
+      "SRC/Parser/Tree/create_node.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Tree/create_node.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Tree/create_node.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Tree/generate_tree.o",
+      "SRC/Parser/Tree/generate_tree.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Tree/generate_tree.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Tree/generate_tree.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Tree/spliting.o",
+      "SRC/Parser/Tree/spliting.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Tree/spliting.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Tree/spliting.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Tree/load_command.o",
+      "SRC/Parser/Tree/load_command.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Tree/load_command.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Tree/load_command.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Tree/load_redirection.o",
+      "SRC/Parser/Tree/load_redirection.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Tree/load_redirection.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Tree/load_redirection.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Tree/free_tree.o",
+      "SRC/Parser/Tree/free_tree.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Tree/free_tree.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Tree/free_tree.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Tree/print_tree.o",
+      "SRC/Parser/Tree/print_tree.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Tree/print_tree.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Tree/print_tree.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Tree/check_linear_args.o",
+      "SRC/Parser/Tree/check_linear_args.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Tree/check_linear_args.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Tree/check_linear_args.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Inhibitors/is_inhibitor.o",
+      "SRC/Parser/Inhibitors/is_inhibitor.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Inhibitors/is_inhibitor.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Inhibitors/is_inhibitor.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Inhibitors/get_variable.o",
+      "SRC/Parser/Inhibitors/get_variable.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Inhibitors/get_variable.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Inhibitors/get_variable.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Inhibitors/get_inhibitor.o",
+      "SRC/Parser/Inhibitors/get_inhibitor.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Inhibitors/get_inhibitor.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Inhibitors/get_inhibitor.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Inhibitors/dup_in_quotes.o",
+      "SRC/Parser/Inhibitors/dup_in_quotes.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Inhibitors/dup_in_quotes.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Inhibitors/dup_in_quotes.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Inhibitors/get_inhibitor_content.o",
+      "SRC/Parser/Inhibitors/get_inhibitor_content.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Inhibitors/get_inhibitor_content.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Inhibitors/get_inhibitor_content.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Inhibitors/back_tick_case.o",
+      "SRC/Parser/Inhibitors/back_tick_case.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Inhibitors/back_tick_case.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Inhibitors/back_tick_case.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Inhibitors/double_quote_case.o",
+      "SRC/Parser/Inhibitors/double_quote_case.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Inhibitors/double_quote_case.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Inhibitors/double_quote_case.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Inhibitors/read_captured_output.o",
+      "SRC/Parser/Inhibitors/read_captured_output.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Inhibitors/read_captured_output.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Inhibitors/read_captured_output.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Globbings/tokenize_glob.o",
+      "SRC/Parser/Globbings/tokenize_glob.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Globbings/tokenize_glob.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Globbings/tokenize_glob.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Globbings/produce_glob.o",
+      "SRC/Parser/Globbings/produce_glob.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Globbings/produce_glob.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Globbings/produce_glob.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Line_Errors/check_inhibitor_error.o",
+      "SRC/Parser/Line_Errors/check_inhibitor_error.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Line_Errors/check_inhibitor_error.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Line_Errors/check_inhibitor_error.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Line_Errors/binary_error_parser.o",
+      "SRC/Parser/Line_Errors/binary_error_parser.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Line_Errors/binary_error_parser.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Line_Errors/binary_error_parser.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Line_Errors/display_error.o",
+      "SRC/Parser/Line_Errors/display_error.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Line_Errors/display_error.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Line_Errors/display_error.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Line_Errors/check_right_redir.o",
+      "SRC/Parser/Line_Errors/check_right_redir.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Line_Errors/check_right_redir.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Line_Errors/check_right_redir.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Line_Errors/check_left_redir.o",
+      "SRC/Parser/Line_Errors/check_left_redir.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Line_Errors/check_left_redir.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Line_Errors/check_left_redir.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Line_Errors/check_parenthesis.o",
+      "SRC/Parser/Line_Errors/check_parenthesis.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Line_Errors/check_parenthesis.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Line_Errors/check_parenthesis.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-g3",
+      "-c",
+      "-o",
+      "SRC/Parser/Line_Errors/check_pipe.o",
+      "SRC/Parser/Line_Errors/check_pipe.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/Parser/Line_Errors/check_pipe.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/Parser/Line_Errors/check_pipe.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-o",
+      "my_str_to_word_array_n.o",
+      "my_str_to_word_array_n.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh/SRC/lib",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/lib/my_str_to_word_array_n.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/lib/my_str_to_word_array_n.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-o",
+      "my_strlen.o",
+      "my_strlen.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh/SRC/lib",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/lib/my_strlen.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/lib/my_strlen.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-o",
+      "add_str.o",
+      "add_str.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh/SRC/lib",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/lib/add_str.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/lib/add_str.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-o",
+      "my_strstr.o",
+      "my_strstr.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh/SRC/lib",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/lib/my_strstr.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/lib/my_strstr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-o",
+      "my_free_word_array.o",
+      "my_free_word_array.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh/SRC/lib",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/lib/my_free_word_array.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/lib/my_free_word_array.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-o",
+      "is_alpha.o",
+      "is_alpha.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh/SRC/lib",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/lib/is_alpha.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/lib/is_alpha.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-o",
+      "my_strcat.o",
+      "my_strcat.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh/SRC/lib",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/lib/my_strcat.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/lib/my_strcat.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-o",
+      "is_alphanumeric.o",
+      "is_alphanumeric.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh/SRC/lib",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/lib/is_alphanumeric.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/lib/is_alphanumeric.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-o",
+      "my_strdup.o",
+      "my_strdup.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh/SRC/lib",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/lib/my_strdup.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/lib/my_strdup.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-o",
+      "my_putstr.o",
+      "my_putstr.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh/SRC/lib",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/lib/my_putstr.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/lib/my_putstr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-o",
+      "my_duptab.o",
+      "my_duptab.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh/SRC/lib",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/lib/my_duptab.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/lib/my_duptab.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-o",
+      "my_getnbr.o",
+      "my_getnbr.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh/SRC/lib",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/lib/my_getnbr.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/lib/my_getnbr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-o",
+      "my_strcmp.o",
+      "my_strcmp.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh/SRC/lib",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/lib/my_strcmp.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/lib/my_strcmp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-o",
+      "my_put_nbr.o",
+      "my_put_nbr.c"
+    ],
+    "directory": "/home/seb/delivery/PSU/42sh/SRC/lib",
+    "file": "/home/seb/delivery/PSU/42sh/SRC/lib/my_put_nbr.c",
+    "output": "/home/seb/delivery/PSU/42sh/SRC/lib/my_put_nbr.o"
+  }
+]

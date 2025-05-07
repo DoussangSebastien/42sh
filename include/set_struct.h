@@ -12,17 +12,10 @@
     #include <stdlib.h>
     #include <string.h>
 
-/**
- * @struct var_s
- * @brief Represents a single shell variable (name-value pair).
- *
- * This structure stores a variable name and its associated value.
- * The list is singly linked to allow efficient insertion and traversal.
- */
 typedef struct var_s {
-    char *name;           /**< Name of the variable */
-    char *value;          /**< Value associated with the variable */
-    struct var_s *next;   /**< Pointer to the next variable in the list */
+    char *name;
+    char *value;
+    struct var_s *next;
 } var_t;
 
 #endif

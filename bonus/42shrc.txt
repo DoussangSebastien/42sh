@@ -1,0 +1,3 @@
+echo "Bienvenue dans le 42sh le plus cool de la promo :p. Ne casse pas trop le code stp!"
+ls
+date
